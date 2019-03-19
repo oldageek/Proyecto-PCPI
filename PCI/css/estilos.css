@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../img/fondoPrincipal2.png");
+}
+
+
+/* ---- HEADER ---- */
+
+header .menuLogin {
+    height: auto;
+    background: #003B5C;
+}
+
+header .menuLogin img {
+    width: 110px;
+    height: 60px;
+    padding: 2px;
+}
+
+header .menuLogin button {
+    margin: 10px;
+}
+
+header .menuLogin button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    margin-bottom: 5px;
+}
+
+header .fondo {
+    background: url(../img/buap.png);
+    background-position-x: center;
+    background-position-y: center;
+    margin: 0;
+    width: 100%;
+    height: 113px;
+}
+
+
+/* ---- MAIN ---- */
+
+main .container pre {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-style: bold;
+    align: center;
+}
+
+main .palabra-celebre {
+    padding: 40px 0;
+    border-top: 2px solid #cbcbcb;
+    border-bottom: 2px solid #cbcbcb;
+    margin-bottom: 40px;
+}
+
+main #subtitulo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/* ---- FOOTER ---- */
+
+footer {
+    margin-top: 20px;
+    height: 80px;
+    padding: 5px;
+    background: #003B5C;
+}
+
+footer .logos img {
+    width: 55 px;
+    height: 55px;
+    margin: 10px;
+}
+
+footer .redes #terminos-condiciones {
+    color: #fff;
+    line-height: 10px;
+    font-size: 10px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    align-content: center;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer .redes .icono {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    background: #cbcbcb;
+    display: inline-block;
+    margin: 0px 0px;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all .3s ease;
+}
+
+footer .redes .facebook {
+    background: #3b5998;
+    margin-right: 10px;
+}
+
+footer .redes .instagram {
+    background: #833ab4;
+    margin-right: 10px;
+}
+
+footer .redes .twitter {
+    background: #1da1f2;
+    margin-right: 10px;
+}
+
+footer .redes .correo {
+    background: #424242;
+    margin-right: 10px;
+}
