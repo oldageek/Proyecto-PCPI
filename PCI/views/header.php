@@ -22,10 +22,10 @@
                     </div>
                     <div class="col d-flex justify-content-end">
                         <button class="btn btn-success btn-sm">
-                            <a href="#">Iniciar Sesion</a>
+                            <a href="login.php">Iniciar Sesion <i class="fas fa-sign-in-alt"></i></a>
                         </button>
                         <button class="btn btn-danger btn-sm">
-                            <a href="registro.php">Registrarse</a>
+                            <a href="registro.php">Registrarse <i class="fas fa-user"></i></a>
                         </button>
                     </div>
                 </div>

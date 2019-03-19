@@ -1,8 +1,8 @@
 <?php require 'header.php'; ?>
 
-    <div class="container">
-        <div class="row">
-            <a href="index.php" id="iconHome"><i class="fas fa-home"></i></a>
+    <div class="container"> 
+        <div class="row-auto">
+            <a href="index.php" class="icono"><i class="fas fa-home"></i></a>
         </div>
         <div class="row">
             <div class="col-12 d-flex justify-content-center">

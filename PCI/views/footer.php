@@ -4,6 +4,7 @@
                 <div class="col logos d-flex justify-content-start">
                     <img src=" img/marca.png " alt="Imagen no disponible ">
                     <img src="img/logoBuap.png " alt="Imagen no disponible ">
+                    <img src="img/conta.png" alt="Imagen no disponible">
                     <img src="img/compu.png" alt="Imagen no disponible">
                 </div>
                 <div class="col redes d-flex justify-content-end align-items-center">
