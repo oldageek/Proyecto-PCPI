@@ -33,6 +33,10 @@ header .menuLogin button a {
     text-decoration: none;
 }
 
+header .menuLogin button a svg {
+    margin-left: 4px;
+}
+
 header {
     margin-bottom: 5px;
 }
@@ -43,7 +47,7 @@ header .fondo {
     background-position-y: center;
     margin: 0;
     width: 100%;
-    height: 100px;
+    height: 60px;
 }
 
 

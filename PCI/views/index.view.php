@@ -5,8 +5,7 @@
             <div class="row">
                 <div class="col-12 mt-3 d-flex justify-content-center">
                     <pre>
-                        Plataforma para el Control de Productos
-                                        de Investigacion
+                        Plataforma para el Control de Productos de Investigacion
                     </pre>
                 </div>
                 <div class="col-12 mb-5">
