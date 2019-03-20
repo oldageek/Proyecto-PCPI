@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-03-2019 a las 04:54:10
+-- Tiempo de generación: 20-03-2019 a las 07:31:59
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.2
 
@@ -200,7 +200,6 @@ CREATE TABLE `publicaciones` (
   `idInvestigadorPublicacion` int(11) NOT NULL,
   `issn` varchar(45) DEFAULT NULL,
   `nombrePublicacion` varchar(45) DEFAULT NULL,
-  `Publicacionescol` varchar(45) DEFAULT NULL,
   `nombreRevista` varchar(45) DEFAULT NULL,
   `correoRevista` varchar(30) DEFAULT NULL,
   `paginaInicio` int(11) DEFAULT NULL,
@@ -328,6 +327,18 @@ ALTER TABLE `congresos`
   MODIFY `idCongreso` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT de la tabla `investigadores`
+--
+ALTER TABLE `investigadores`
+  MODIFY `idInvestigador` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `libros`
+--
+ALTER TABLE `libros`
+  MODIFY `idLibro` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `proyectos`
 --
 ALTER TABLE `proyectos`
@@ -345,17 +356,6 @@ ALTER TABLE `publicaciones`
 ALTER TABLE `tesis`
   MODIFY `idTesis` int(11) NOT NULL AUTO_INCREMENT;
 
---
--- AUTO_INCREMENT de la tabla `investigadores`
---
-ALTER TABLE `investigadores`
-  MODIFY `idInvestigador` int(11) NOT NULL AUTO_INCREMENT;
-  
-  --
--- AUTO_INCREMENT de la tabla `libros`
---
-ALTER TABLE `libros`
-  MODIFY `idLibro` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- Restricciones para tablas volcadas
 --
