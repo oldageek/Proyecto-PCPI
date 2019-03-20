@@ -6,47 +6,27 @@
         </div>
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
-                <h3>Registro de Libro <!--<i class="fas fa-search"></i>--></h3>
+                <h3>Registro de Articulo <!--<i class="fas fa-search"></i>--></h3>
             </div>
         </div>
         <div class="row mt-4">
             <div class="col-6">
                 <h5>Informacion del Libro</h5>
                 <form action="" method="post">
-                    <input type="text" class="form-control mt-3" id="isbn" placeholder="ISBN">
-                    <input type="text" class="form-control mt-3" id="tituloLibro" placeholder="Titulo del Libro *" required>
-                    <input type="number" min="1980" max="2019" step="1" class="form-control mt-3" id="anioEdicion" placeholder="Año de Creacion *" required>
-                    <input type="number" min="1" max="10" step="1" class="form-control mt-3" id="volumen" placeholder="Volumen *" required>
-                    <input type="number" min="1" max="10" step="1" class="form-control mt-3" id="tomo" placeholder="Tomo *" required>
-                    <input type="number" min="1980" max="2019" step="1" class="form-control mt-3" id="anioEdicion" placeholder="Año de Edición *" required>
-                    <input type="text" class="form-control mt-3" id="editorial" placeholder="Editorial">
-                    <input type="number" min="1" max="4000" step="1" class="form-control mt-3" id="noPaginas" placeholder="Numero de Paginas *" required>
-                    
-                    <select name="financiamiento" class="custom-select mt-3" id="financiamiento">
-                        <option selected>Si</option>
-                        <option selected>No</option>
-                        <option disabled selected>Financiamiento *</option>
-                    </select>
-                    
-                    <input type="number" min="100" max="10000" step="100" class="form-control mt-3" name="importe" id="importe" placeholder="Importe Financiado *" required>
-                    
-                    <select name="estatus" class="custom-select mt-3" id="estatus">
-                        <option selected>Terminado</option>
-                        <option selected>En Proceso</option>
-                        <option disabled selected>Estatus *</option>
-                    </select>
-                    
-                    <select name="idioma" class="custom-select mt-3" id="idioma">
-                        <option selected>Español</option>
-                        <option selected>Ingles</option>
-                        <option selected>Frances</option>
-                        <option disabled selected>Idioma *</option>
-                    </select>
+                    <input type="text" class="form-control mt-3" id="issn" placeholder="ISSN *" required>
+                    <input type="text" class="form-control mt-3" id="tituloRevista" placeholder="Titulo del Articulo *" required>
+                    <input type="text" class="form-control mt-3" id="nombreRevista" placeholder="Nombre de la Revista *" required>
+                    <input type="number" min="1" max="1000" step="1" class="form-control mt-3" id="numeroRevista" placeholder="Numero de la Revista *" required>
+                    <input type="number" min="1" max="1000" step="1" class="form-control mt-3" id="volumen" placeholder="Volumen de la Revista *" required>
+                    <input type="number" min="1980" max="2019" step="1" class="form-control mt-3" id="anioPublicacion" placeholder="Año de Publicación *" required>
+                    <input type="number" min="1" max="4000" step="1" class="form-control mt-3" id="paginaInicio" placeholder="Pagina Inicio *" required>
+                    <input type="number" min="1" max="4000" step="1" class="form-control mt-3" id="paginaFin" placeholder="Pagina Fin *" required>
                     
                     <input type="text" class="form-control mt-3" id="palabra1" placeholder="Palabra Clave 1">
                     <input type="text" class="form-control mt-3" id="palabra2" placeholder="Palabra Clave 2">
-                    <input type="text" class="form-control mt-3" id="palabra3" placeholder="Palabra Clave 3">
-                    <br>
+                    <input type="text" class="form-control mt-3 mb-5" id="palabra3" placeholder="Palabra Clave 3">
+                    
+
                     <h5>Area de Conocimiento</h5>
                     
                     <select name="area" class="custom-select mt-3" id="area">
@@ -154,9 +134,15 @@
                         <option disabled selected>Sub-Diciplina *</option>
                     </select>
                     
+                    <select name="area" class="custom-select mt-3" id="area">
+                        <option selected>SI</option>
+                        <option selected>No</option>
+                        <option disabled selected>Apoyo CONACYT *</option>
+                    </select>
+                    
                     <textarea class="form-control mt-3 mb-5" rows="5" id="autores" placeholder="Autores *" required></textarea>
                     
-                    <button type="submit" class="btn btn-success mt-4">Registrar Libro</button>
+                    <button type="submit" class="btn btn-success mt-4">Registrar Articulo</button>
                 </form>
             </div>
         </div>
