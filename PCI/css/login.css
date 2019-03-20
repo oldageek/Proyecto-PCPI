@@ -23,9 +23,21 @@ body {
     background: rgba(255, 255, 255, .5);
 }
 
+.container pre {
+    color: #fff;
+    font-size: 33px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
 .container .card svg {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
+    background: none;
+    color: #E65100;
+    margin-top: 25px;
+    margin-bottom: 10px;
     font-size: 60px;
     align-self: center
 }

@@ -7,16 +7,24 @@
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-6">
-                <h3>Aqui ira nuestro Log In</h3>
+            <div class="col-6 d-flex justify-content-start">
+                <pre>
+                    "No basta tener un buen ingenio,
+                    lo principal es aplicarlo bien"
+
+                                        - Rene Descartés -
+                </pre>
             </div>
             <div class="col-6 d-flex justify-content-center">
-                <div class="card w-80 text-center bg-light">
+                <div class="card text-center bg-light" style="width: 28rem;">
                     <i class="card-img-top fas fa-user-circle"  alt="Card image cap"></i>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h3 class="card-title">Inicio de Sesion</h3>
+                        <form action="" method="post">
+                            <input type="text" class="form-control form-contro-lg  mt-3" id="nombre" placeholder="ID Usuario">
+                            <input type="password" class="form-control form-contro-lg  mt-3" id="contrasena" placeholder="Contraseña">
+                            <button type="submit" class="btn btn-success mt-4">Iniciar Sesion</button>
+                        </form>
                     </div>
                 </div>
             </div>

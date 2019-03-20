@@ -51,7 +51,7 @@
                     </pre>
                 </div>
                 <div class="col mt-3 mb-3">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card border-dark" style="width: 18rem;">
                         <img class="card-img-top" src="img/contaEnlaces1.png" alt="Imagen de card">
                         <div class="card-body">
                             <h5 class="card-title">Card Titulo</h5>
@@ -62,7 +62,7 @@
                 </div>
 
                 <div class="col mt-3 mb-3">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card border-dark" style="width: 18rem;">
                         <img class="card-img-top" src="img/contaEnlace2.jpg" alt="Imagen de card">
                         <div class="card-body">
                             <h5 class="card-title">Card Titulo</h5>
@@ -73,7 +73,7 @@
                 </div>
 
                 <div class="col mt-3 mb-3">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card border-dark" style="width: 18rem;">
                         <img class="card-img-top" src="img/contaEnlace3.jpg" alt="Imagen de card">
                         <div class="card-body">
                             <h5 class="card-title">Card Titulo</h5>
@@ -84,7 +84,7 @@
                 </div>
 
                 <div class="col mt-3 mb-3">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card border-dark" style="width: 18rem;">
                         <img class="card-img-top" src="img/contaEnlace4.jpg" alt="Imagen de card">
                         <div class="card-body">
                             <h5 class="card-title">Card Titulo</h5>
@@ -95,7 +95,7 @@
                 </div>
 
                 <div class="col mt-3 mb-3">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card border-dark" style="width: 18rem;">
                         <img class="card-img-top" src="img/contaEnlace5.jpg" alt="Imagen de card">
                         <div class="card-body">
                             <h5 class="card-title">Card Titulo</h5>
@@ -106,7 +106,7 @@
                 </div>
 
                 <div class="col mt-3 mb-3">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card border-dark" style="width: 18rem;">
                         <img class="card-img-top" src="img/contaEnlace6.jpg" alt="Imagen de card">
                         <div class="card-body">
                             <h5 class="card-title">Card Titulo</h5>
