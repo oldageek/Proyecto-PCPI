@@ -12,27 +12,27 @@
         <div class="row mt-4">
             <div class="col-6">
                 <h5>Informacion Personal</h5>
-                <form action="" method="post">
+                <form class="formulario" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                     <input type="text" class="form-control mt-3" id="curp" placeholder="CURP *">
                     <input type="text" class="form-control mt-3" id="nombre" placeholder="Nombre *">
                     <input type="text" class="form-control mt-3" id="apellidopaterno" placeholder="Apellido Paterno *">
                     <input type="text" class="form-control mt-3" id="apellidomaterno" placeholder="Apellido Materno *">
                     
-                    <select name="genero" class="custom-select mt-3" id="">
-                        <option selected>Masculino</option>
-                        <option selected>Femenino</option>
-                        <option selected>Otro</option>
+                    <select name="genero" class="custom-select mt-3" id="genero">
+                        <option value="1">Masculino</option>
+                        <option value="2">Femenino</option>
+                        <option value="3">Otro</option>
                         <option disabled selected>Genero *</option>
                     </select>
                     
-                    <select name="paisNacimineto" class="custom-select mt-3 mb-5" id="">
-                        <option selected>México</option>
-                        <option selected>EEUU</option>
-                        <option selected>Argentina</option>
-                        <option selected>Colombia</option>
-                        <option selected>Venezuela</option>
-                        <option selected>España</option>
-                        <option selected>Ecuador</option>
+                    <select name="paisNacimineto" class="custom-select mt-3 mb-5" id="paisNacimineto">
+                        <option value="1">México</option>
+                        <option value="2">EEUU</option>
+                        <option value="3">Argentina</option>
+                        <option value="4">Colombia</option>
+                        <option value="5">Venezuela</option>
+                        <option value="6">España</option>
+                        <option value="7">Ecuador</option>
                         <option disabled selected>Pais de Nacimiento *</option>
                     </select>
                     
@@ -44,25 +44,25 @@
                     
                     <input type="text" class="form-control mt-3" id="iduser" placeholder="direccion">
                     
-                    <select name="" class="custom-select mt-3" id="">
-                        <option selected>CDMX</option>
-                        <option selected>Puebla</option>
-                        <option selected>Tlaxcala</option>
-                        <option selected>Morelos</option>
-                        <option selected>Veracruz</option>
-                        <option selected>Mexico</option>
-                        <option selected>Guadalajara</option>
+                    <select name="estado" class="custom-select mt-3" id="estado">
+                        <option value="1">CDMX</option>
+                        <option value="2">Puebla</option>
+                        <option value="3">Tlaxcala</option>
+                        <option value="4">Morelos</option>
+                        <option value="5">Veracruz</option>
+                        <option value="6">Mexico</option>
+                        <option value="7">Guadalajara</option>
                         <option disabled selected>Entidad *</option>
                     </select>
                     
-                    <select name="pais" class="custom-select mt-3 mb-5" id="">
-                        <option selected>México</option>
-                        <option selected>EEUU</option>
-                        <option selected>Argentina</option>
-                        <option selected>Colombia</option>
-                        <option selected>Venezuela</option>
-                        <option selected>España</option>
-                        <option selected>Ecuador</option>
+                    <select name="pais" class="custom-select mt-3 mb-5" id="pais">
+                        <option value="1">México</option>
+                        <option value="2">EEUU</option>
+                        <option value="3">Argentina</option>
+                        <option value="4">Colombia</option>
+                        <option value="5">Venezuela</option>
+                        <option value="6">España</option>
+                        <option value="7">Ecuador</option>
                         <option disabled selected>Pais *</option>
                     </select>
                     
@@ -70,24 +70,24 @@
 
                     <h5>Información Institucional</h5>
 
-                    <select name="" class="custom-select mb-4" id="">
-                        <option disabled selected>Profesor</option>
-                        <option disabled selected>Secretario</option>
+                    <select name="cargo" class="custom-select mb-4" id="cargo">
+                        <option value="1">Profesor</option>
+                        <option value="2">Secretario</option>
                         <option disabled selected>Cargo Academico *</option>
                     </select>
 
-                    <select name="" class="custom-select mb-4" id="">
-                        <option selected>Licenciatura</option>
-                        <option selected>Especialidad</option>
-                        <option selected>Maestria</option>
-                        <option selected>Doctorado</option>
-                        <option selected>Otro</option>
+                    <select name="grado" class="custom-select mb-4" id="grado">
+                        <option value="1">Licenciatura</option>
+                        <option value="2">Especialidad</option>
+                        <option value="3">Maestria</option>
+                        <option value="4">Doctorado</option>
+                        <option value="5">Otro</option>
                         <option disabled selected>Grado Academico</option>
                     </select>
 
-                    <select name="" class="custom-select mb-4" id="">
-                        <option disabled selected>Tipo 1</option>
-                        <option disabled selected>Tipo 2</option>
+                    <select name="tipo" class="custom-select mb-4" id="tipo">
+                        <option value="1">Tipo 1</option>
+                        <option value="2">Tipo 2</option>
                         <option disabled selected>Tipo de padron de Investigación</option>
                     </select>
 

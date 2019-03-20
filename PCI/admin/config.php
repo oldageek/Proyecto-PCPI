@@ -1,9 +1,10 @@
 <?php 
 
 $bd_config = array(
-    'basedatos' => 'dbppcpi',
+    'basedatos' => 'localhost',
     'usuario' => 'root',
-    'pass' => ''
+    'pass' => '',
+    'bdname' => 'dbppcpi'
 );
 
 $pcpi_admin = array(
