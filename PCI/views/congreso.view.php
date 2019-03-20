@@ -18,19 +18,19 @@
                     <input type="text" class="form-control mt-3" id="nombreDocente" placeholder="Nombre del Docente *" required>
                     
                        <select name="pais" class="custom-select mt-3" id="pais">
-                        <option selected>México</option>
-                        <option selected>España</option>
-                        <option selected>Colombia</option>
-                        <option selected>EEUU</option>
-                        <option selected>Argentina</option>
-                        <option selected>Chile</option>
-                        <option selected>Canada</option>
+                        <option value="1">México</option>
+                        <option value="2">España</option>
+                        <option value="3">Colombia</option>
+                        <option value="4">EEUU</option>
+                        <option value="5">Argentina</option>
+                        <option value="6">Chile</option>
+                        <option value="7">Canada</option>
                         <option disabled selected>Pais donde fue el Congreso *</option>
                     </select>
                     
                     <select name="financiamiento" class="custom-select mt-3" id="financiamiento">
-                        <option selected>Si</option>
-                        <option selected>No</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
                         <option disabled selected>Financiamiento *</option>
                     </select>
                     
