@@ -1,5 +1,7 @@
 <?php 
 
+define('RUTA', 'http://localhost/Proyecto-PCPI/PCI');
+
 $bd_config = array(
     'basedatos' => 'localhost',
     'usuario' => 'root',

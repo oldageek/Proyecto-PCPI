@@ -3,11 +3,6 @@ session_start();
 require 'admin/config.php';
 require 'functions.php';
 
-$conexion = conexion($bd_config);
-if (!$conexion) {
-    header('Location: ../error.php');
-}
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $id = null;
@@ -26,6 +21,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $cargo = $_POST['cargo'];
     $grado = $_POST['grado'];
     $tipo = $_POST['tipo'];
+
+    $conexion = conexion($bd_config);
+    if (!$conexion) {
+        header('Location: ../error.php');
+    }
 
     $statement = $conexion -> prepare ("INSERT INTO investigadores(idInvestigador, curp, nombre, paterno, materno, genero, paisNacimiento, domicilio, entidad, pais, correo, pass, carAcademico, gradoAcademico, tipoPadron) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
@@ -47,11 +47,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $tipo);
 
     $statement -> execute();
-    if ($conexion -> affected_rows >= 1) {
-        header("Location http://localhost/Proyecto-PCPI/PCI/index.php");
-    }else{
-        echo 'No se agrego nada';
-    }
+
+    header('Location: ' . RUTA . '/index.php');
 
 }
 
