@@ -1,4 +1,4 @@
-<?php require 'header.php'; ?>
+<?php require 'headerIndex.php'; ?>
 
     <div class="container"> 
         <div class="row-auto">
@@ -16,10 +16,10 @@
                     <input type="text" class="form-control mt-4" name="curp" id="curp" placeholder="CURP *">
                     <input type="text" class="form-control mt-4" name="nombre" id="nombre" placeholder="Nombre *">
                     <input type="text" class="form-control mt-4" name="apellidopaterno" id="apellidopaterno" placeholder="Apellido Paterno *">
-                    <input type="text" class="form-control mt-4" name="apellidomaterno" id="apellidomaterno" placeholder="Apellido Materno *">
+                    <input type="text" class="form-control mt-4 mb-3" name="apellidomaterno" id="apellidomaterno" placeholder="Apellido Materno *">
                     
                     <label for="genero">Genero:</label>
-                    <select name="genero" class="custom-select mt-3" id="genero">
+                    <select name="genero" class="custom-select mb-3" id="genero">
                         <option value="Masculino">Masculino</option>
                         <option value="Femenino">Femenino</option>
                         <option value="Otro">Otro</option>
@@ -27,7 +27,7 @@
                     </select>
                     
                     <label for="paisNacimineto">Pais de nacimiento:</label>
-                    <select name="paisNacimineto" class="custom-select mt-3 mb-5" id="paisNacimineto">
+                    <select name="paisNacimineto" class="custom-select mb-5" id="paisNacimineto">
                         <option value="México">México</option>
                         <option value="EEUU">EEUU</option>
                         <option value="Argentina">Argentina</option>
@@ -44,10 +44,10 @@
                     
                     <h5>Domicilio</h5>
                     
-                    <input type="text" class="form-control mt-2" name="direccion" id="direccion" placeholder="direccion">
+                    <input type="text" class="form-control mt-3 mb-3" name="direccion" id="direccion" placeholder="direccion">
                     
                     <label for="estado">Estado:</label>
-                    <select name="estado" class="custom-select mt-3" id="estado">
+                    <select name="estado" class="custom-select mb-3" id="estado">
                         <option value="CDMX">CDMX</option>
                         <option value="Puebla">Puebla</option>
                         <option value="Tlaxcala">Tlaxcala</option>
@@ -59,7 +59,7 @@
                     </select>
                     
                     <label for="pais">Pais:</label>
-                    <select name="pais" class="custom-select mt-3 mb-5" id="pais">
+                    <select name="pais" class="custom-select mb-5" id="pais">
                         <option value="México">México</option>
                         <option value="EEUU">EEUU</option>
                         <option value="Argentina">Argentina</option>
@@ -74,7 +74,7 @@
 
                     <h5>Información Institucional</h5>
 
-                    <label for="cargo">Cargo Academico:</label>
+                    <label for="cargo mt-3">Cargo Academico:</label>
                     <select name="cargo" class="custom-select mb-4" id="cargo">
                         <option value="Profesor">Profesor</option>
                         <option value="Secretario">Secretario</option>

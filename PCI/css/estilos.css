@@ -80,6 +80,10 @@ main #subtitulo {
     line-height: 40px;
 }
 
+.container form label {
+    margin: 0%;
+}
+
 
 /* ---- FOOTER ---- */
 

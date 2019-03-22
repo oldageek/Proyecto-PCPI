@@ -1,8 +1,8 @@
-<?php require 'header.php'; ?>
+<?php require 'headerIndex.php'; ?>
 
     <main>
         <div class="container">
-            <div class="row">
+            <div class="row seccion" id="seccion1">
                 <div class="col-12 mt-3 d-flex justify-content-center">
                     <pre>
                         Plataforma para el Control de Productos de Investigacion
@@ -39,12 +39,12 @@
                     </div>
                 </div>
             </div>
-            <div class="row palabra-celebre">
+            <div class="row seccion palabra-celebre" id="seccion2">
                 <div class="col">
                     <img src="img/descarters.png" alt="">
                 </div>
             </div>
-            <div class="row enlaces">
+            <div class="row seccion enlaces" id="seccion3">
                 <div class="col-12 d-flex justify-content-center" id="subtitulo">
                     <pre>
                         Plataforma Digital
@@ -52,55 +52,55 @@
                 </div>
                 <div class="col mt-3 mb-3">
                     <div class="card border-dark" style="width: 18rem;">
-                        <img class="card-img-top" src="img/contaEnlaces1.png" alt="Imagen de card">
+                        <img class="card-img-top" src="img/facontaenlace.png" alt="Imagen de card">
                         <div class="card-body">
-                            <h5 class="card-title">Card Titulo</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, harum?</p>
-                            <a href="#" class="btn btn-primary">Leer mas...</a>
+                            <h5 class="card-title">Eventos Contaduria</h5>
+                            <p class="card-text">Eventos importantes relacionados con la facultad de Contaduria y visualizacion de las fechas para Semestres, Posgrados y Cuatrimestres.</p>
+                            <a href="http://www.eventosconta.buap.mx" target="_blank" class="btn btn-info">Leer mas...</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col mt-3 mb-3">
                     <div class="card border-dark" style="width: 18rem;">
-                        <img class="card-img-top" src="img/contaEnlace2.jpg" alt="Imagen de card">
+                        <img class="card-img-top" src="img/eventosenlace.png" alt="Imagen de card">
                         <div class="card-body">
-                            <h5 class="card-title">Card Titulo</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, harum?</p>
-                            <a href="#" class="btn btn-primary">Leer mas...</a>
+                            <h5 class="card-title">Plataforma Integral de Eventos BUAP</h5>
+                            <p class="card-text">Inscripciones a eventos de Unidades Academicas de Benemerita Universidad Autonoma de Puebla.</p>
+                            <a href="https://pieu.buap.mx" target="_blank" class="btn btn-info">Leer mas...</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col mt-3 mb-3">
                     <div class="card border-dark" style="width: 18rem;">
-                        <img class="card-img-top" src="img/contaEnlace3.jpg" alt="Imagen de card">
+                        <img class="card-img-top" src="img/conacyt.png" alt="Imagen de card">
                         <div class="card-body">
-                            <h5 class="card-title">Card Titulo</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, harum?</p>
-                            <a href="#" class="btn btn-primary">Leer mas...</a>
+                            <h5 class="card-title">Consejo Nacional de Ciencia y Tecnologia</h5>
+                            <p class="card-text">Esta plataforma promueve la inovación en el gobierno, impulsa la eficiencia y transforma los procesos para proveer una plataforma de participacion a la poblacion.</p>
+                            <a href=" https://miic.conacyt.mx/generador-view-angular/index.html?application=CVU#/login " target="_blank" class="btn btn-info">Leer mas...</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col mt-3 mb-3">
                     <div class="card border-dark" style="width: 18rem;">
-                        <img class="card-img-top" src="img/contaEnlace4.jpg" alt="Imagen de card">
+                        <img class="card-img-top" src="img/contaduriaenlace.png" alt="Imagen de card">
                         <div class="card-body">
-                            <h5 class="card-title">Card Titulo</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, harum?</p>
-                            <a href="#" class="btn btn-primary">Leer mas...</a>
+                            <h5 class="card-title">Contaduria</h5>
+                            <p class="card-text">Pagina oficial de la Facultad de Contaduria Publica</p>
+                            <a href="http://www.contaduria.buap.mx" target="_blank" class="btn btn-info">Leer mas...</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col mt-3 mb-3">
                     <div class="card border-dark" style="width: 18rem;">
-                        <img class="card-img-top" src="img/contaEnlace5.jpg" alt="Imagen de card">
+                        <img class="card-img-top" src="img/autoservenlace.png" alt="Imagen de card">
                         <div class="card-body">
-                            <h5 class="card-title">Card Titulo</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, harum?</p>
-                            <a href="#" class="btn btn-primary">Leer mas...</a>
+                            <h5 class="card-title">Autoservicios</h5>
+                            <p class="card-text">Pagina Oficial de la Benemerita Universidad Autonoma de Puebla, creada para los alumnos y docentes.</p>
+                            <a href=" http://webserver1.siiaa.siu.buap.mx:81/autoservicios/twbkwbis.P_GenMenu?name=homepage" target="_blank"  class="btn btn-info">Leer mas...</a>
                         </div>
                     </div>
                 </div>
