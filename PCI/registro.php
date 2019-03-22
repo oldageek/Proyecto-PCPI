@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $grado = $_POST['grado'];
     $tipo = $_POST['tipo'];
 
-    $statement = $conexion -> prepare ("INSERT INTO investigadores VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $statement = $conexion -> prepare ("INSERT INTO investigadores(idInvestigador, curp, nombre, paterno, materno, genero, paisNacimiento, domicilio, entidad, pais, correo, pass, carAcademico, gradoAcademico, tipoPadron) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
     $statement -> bind_param('issssssssssssss', 
     $id,
