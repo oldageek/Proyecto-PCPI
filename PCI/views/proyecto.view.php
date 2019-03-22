@@ -18,8 +18,8 @@
                     <input type="text" class="form-control mt-3" id="instanciaRegistro" placeholder="Instacia del Registro *" required>
                     
                     <select name="financiamiento" class="custom-select mt-3" id="financiamiento">
-                        <option selected>Si</option>
-                        <option selected>No</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
                         <option disabled selected>Financiamiento *</option>
                     </select>
                     
@@ -38,16 +38,16 @@
                     </div>
 
                     <select name="estatus" class="custom-select mt-3" id="estatus">
-                        <option selected>Terminado</option>
-                        <option selected>En Proceso</option>
+                        <option value="1">Terminado</option>
+                        <option value="2">En Proceso</option>
                         <option disabled selected>Estatus *</option>
                     </select>
 
                     <input type="number" min="0" max="100" step="5" class="form-control mt-3" id="porcentajeAvance" placeholder="Porcentaje de Avance *" required>
 
                     <select name="Reconocimiento" class="custom-select mt-3" id="reconocimiento">
-                        <option selected>Si</option>
-                        <option selected>No</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
                         <option disabled selected>Reconocimiento </option>
                     </select>
                    
@@ -58,113 +58,113 @@
                     <h5>Area de Conocimiento</h5>
                     
                     <select name="area" class="custom-select mt-3" id="area">
-                        <option selected>Fisica, Matemáticas y Ciencias de la Tierra</option>
-                        <option selected>Biología y Química</option>
-                        <option selected>Medicina y Salud</option>
-                        <option selected>Humanidades y de la Conducta</option>
-                        <option selected>Sociales y Económicas</option>
-                        <option selected>Biotecnología y Agropecuarias</option>
-                        <option selected>Ingenieria e Industrial</option>
+                        <option value="1">Fisica, Matemáticas y Ciencias de la Tierra</option>
+                        <option value="2">Biología y Química</option>
+                        <option value="3">Medicina y Salud</option>
+                        <option value="4">Humanidades y de la Conducta</option>
+                        <option value="5">Sociales y Económicas</option>
+                        <option value="6">Biotecnología y Agropecuarias</option>
+                        <option value="7">Ingenieria e Industrial</option>
                         <option disabled selected>Área *</option>
                     </select>
                     
                     <select name="campo" class="custom-select mt-3" id="campo">
-                        <option selected>LÓGICA</option>
-                        <option selected>MATEMÁTICAS</option>
-                        <option selected>ASTRONOMÍA Y ASTROFÍSICA</option>
-                        <option selected>FÍSICA</option>
-                        <option selected>CIENCIAS DE LA TIERRA Y EL COSMOS</option>
-                        <option selected>QUIMICA</option>
-                        <option selected>CIENCIAS DE LA VIDA</option>
-                        <option selected>MEDICINA Y PATOLOGIA HUMANA</option>
-                        <option selected>ANTROPOLOGÍA</option>
-                        <option selected>HISTORIA</option>
-                        <option selected>LINGÜISTICA</option>
-                        <option selected>PEDAGOGÍA</option>
-                        <option selected>PSICOLOGÍA</option>
-                        <option selected>ARTES Y LETRAS</option>
-                        <option selected>ÉTICA</option>
-                        <option selected>FILOSOFÍA</option>
-                        <option selected>DEMOGRAFÍA</option>
-                        <option selected>CIENCIAS ECONÓMICAS</option>
-                        <option selected>GEOGRAFIA</option>
-                        <option selected>CIENCIAS JURÍDICAS Y DERECHO</option>
-                        <option selected>CIENCIAS POLÍTICAS</option>
-                        <option selected>SOCIOLOGÍA</option>
-                        <option selected>CIENCIAS AGRONOMICAS Y VETERINARIAS</option>
-                        <option selected>CIENCIAS DE LA TECNOLOGIA</option>
+                        <option value="1">LÓGICA</option>
+                        <option value="2">MATEMÁTICAS</option>
+                        <option value="3">ASTRONOMÍA Y ASTROFÍSICA</option>
+                        <option value="4">FÍSICA</option>
+                        <option value="5">CIENCIAS DE LA TIERRA Y EL COSMOS</option>
+                        <option value="6">QUIMICA</option>
+                        <option value="7">CIENCIAS DE LA VIDA</option>
+                        <option value="8">MEDICINA Y PATOLOGIA HUMANA</option>
+                        <option value="9">ANTROPOLOGÍA</option>
+                        <option value="10">HISTORIA</option>
+                        <option value="11">LINGÜISTICA</option>
+                        <option value="12">PEDAGOGÍA</option>
+                        <option value="13">PSICOLOGÍA</option>
+                        <option value="14">ARTES Y LETRAS</option>
+                        <option value="15">ÉTICA</option>
+                        <option value="16">FILOSOFÍA</option>
+                        <option value="17">DEMOGRAFÍA</option>
+                        <option value="18">CIENCIAS ECONÓMICAS</option>
+                        <option value="19">GEOGRAFIA</option>
+                        <option value="20">CIENCIAS JURÍDICAS Y DERECHO</option>
+                        <option value="21">CIENCIAS POLÍTICAS</option>
+                        <option value="22">SOCIOLOGÍA</option>
+                        <option value="23">CIENCIAS AGRONOMICAS Y VETERINARIAS</option>
+                        <option value="24">CIENCIAS DE LA TECNOLOGIA</option>
                         <option disabled selected>Campo *</option>
                     </select>
                     
                     <select name="diciplina" class="custom-select mt-3" id="diciplina">
-                        <option selected>APLICACIONES DE LA LOGICA</option>
-                        <option selected>LOGICA DEDUCTIVA</option>
-                        <option selected>LOGICA GENERAL</option>
-                        <option selected>LOGICA INDUCTIVA</option>
-                        <option selected>METODOLOGIA</option>
-                        <option selected>OTRAS ESPECIALIDADES EN MATERIA DE LOGICA</option>
-                        <option selected>ALGEBRA</option>
-                        <option selected>ANALISIS Y ANALISIS FUNCIONAL</option>
-                        <option selected>INFORMATICA MATEMATICA</option>
-                        <option selected>GEOMETRIA</option>
-                        <option selected>TEORIA DE LOS NUMEROS</option>
-                        <option selected>ANALISIS NUMERICO</option>
-                        <option selected>INVESTIGACION OPERATIVA</option>
-                        <option selected>CALCULO DE PROBABILIDADES</option>
-                        <option selected>ESTADISTICA</option>
-                        <option selected>TOPOLOGIA</option>
-                        <option selected>COSMOLOGIA Y COSMOGONIA</option>
-                        <option selected>ESPACIOS Y MATERIA INTERPLANETARIOS</option>
-                        <option selected>ASTRONOMIA OPTICA</option>
-                        <option selected>PLANETOLOGIA</option>
-                        <option selected>RADIOASTRONOMIA</option>
-                        <option selected>SISTEMA SOLAR</option>
-                        <option selected>ACUSTICA</option>
-                        <option selected>ELECTROMAGNETISMO</option>
-                        <option selected>ELECTRONICA</option>
-                        <option selected>FISICA DE LOS FLUIDOS</option>
-                        <option selected>MECANICA</option>
-                        <option selected>FISICA MOLECULAR</option>
-                        <option selected>FISICA NUCLEAR</option>
+                        <option value="">APLICACIONES DE LA LOGICA</option>
+                        <option value="">LOGICA DEDUCTIVA</option>
+                        <option value="">LOGICA GENERAL</option>
+                        <option value="">LOGICA INDUCTIVA</option>
+                        <option value="">METODOLOGIA</option>
+                        <option value="">OTRAS ESPECIALIDADES EN MATERIA DE LOGICA</option>
+                        <option value="">ALGEBRA</option>
+                        <option value="">ANALISIS Y ANALISIS FUNCIONAL</option>
+                        <option value="">INFORMATICA MATEMATICA</option>
+                        <option value="">GEOMETRIA</option>
+                        <option value="">TEORIA DE LOS NUMEROS</option>
+                        <option value="">ANALISIS NUMERICO</option>
+                        <option value="">INVESTIGACION OPERATIVA</option>
+                        <option value="">CALCULO DE PROBABILIDADES</option>
+                        <option value="">ESTADISTICA</option>
+                        <option value="">TOPOLOGIA</option>
+                        <option value="">COSMOLOGIA Y COSMOGONIA</option>
+                        <option value="">ESPACIOS Y MATERIA INTERPLANETARIOS</option>
+                        <option value="">ASTRONOMIA OPTICA</option>
+                        <option value="">PLANETOLOGIA</option>
+                        <option value="">RADIOASTRONOMIA</option>
+                        <option value="">SISTEMA SOLAR</option>
+                        <option value="">ACUSTICA</option>
+                        <option value="">ELECTROMAGNETISMO</option>
+                        <option value="">ELECTRONICA</option>
+                        <option value="">FISICA DE LOS FLUIDOS</option>
+                        <option value="">MECANICA</option>
+                        <option value="">FISICA MOLECULAR</option>
+                        <option value="">FISICA NUCLEAR</option>
                         <option disabled selected>Diciplina *</option>
                     </select>
                     
                     <select name="subDiciplina" class="custom-select mt-3" id="subDiciplina">
-                        <option selected>ANALOGIA</option>
-                        <option selected>INDUCCION</option>
-                        <option selected>METODO CIENTIFICO</option>
-                        <option selected>GEOMETRIA ALGEBRAICA</option>
-                        <option selected>ALGEBRA DE OPERADORES LOGICOS</option>
-                        <option selected>CONTABILIDAD</option>
-                        <option selected>GEOMETRIA AFIN</option>
-                        <option selected>TEORIA DE LOS NUMEROS ALGEBRAICOS</option>
-                        <option selected>CONSTRUCCION DE ALGORITMOS</option>
-                        <option selected>ANALISIS MICROECONOMICO</option>
-                        <option selected>MATEMATICAS ACTUARIALES</option>
-                        <option selected>ESTADISTICA ANALITICA</option>
-                        <option selected>ESPACIOS ABSTRACTOS</option>
-                        <option selected>ESTRELLAS BINARIAS</option>
-                        <option selected>CAMPOS INTERPLANETARIOS</option>
-                        <option selected>TELESCOPIOS</option>
-                        <option selected>ANTENAS</option>
-                        <option selected>ENERGIA SOLAR</option>
-                        <option selected>RUIDO</option>
-                        <option selected>CONDUCTIVIDAD</option>
-                        <option selected>CIRCUITOS</option>
-                        <option selected>COLOIDES</option>
-                        <option selected>RADICALES LIBRES</option>
-                        <option selected>IONES ATOMICOS</option>
-                        <option selected>FUENTES DE HACES</option>
-                        <option selected>CINEMATOGRAFIA</option>
-                        <option selected>CATALISIS</option>
-                        <option selected>COMPUESTOS</option>
-                        <option selected>GRAVITACION</option>
+                        <option value="1">ANALOGIA</option>
+                        <option value="2">INDUCCION</option>
+                        <option value="3">METODO CIENTIFICO</option>
+                        <option value="4">GEOMETRIA ALGEBRAICA</option>
+                        <option value="5">ALGEBRA DE OPERADORES LOGICOS</option>
+                        <option value="6">CONTABILIDAD</option>
+                        <option value="7">GEOMETRIA AFIN</option>
+                        <option value="8">TEORIA DE LOS NUMEROS ALGEBRAICOS</option>
+                        <option value="9">CONSTRUCCION DE ALGORITMOS</option>
+                        <option value="10">ANALISIS MICROECONOMICO</option>
+                        <option value="11">MATEMATICAS ACTUARIALES</option>
+                        <option value="12">ESTADISTICA ANALITICA</option>
+                        <option value="13">ESPACIOS ABSTRACTOS</option>
+                        <option value="14">ESTRELLAS BINARIAS</option>
+                        <option value="15">CAMPOS INTERPLANETARIOS</option>
+                        <option value="16">TELESCOPIOS</option>
+                        <option value="17">ANTENAS</option>
+                        <option value="18">ENERGIA SOLAR</option>
+                        <option value="19">RUIDO</option>
+                        <option value="20">CONDUCTIVIDAD</option>
+                        <option value="21">CIRCUITOS</option>
+                        <option value="22">COLOIDES</option>
+                        <option value="23">RADICALES LIBRES</option>
+                        <option value="24">IONES ATOMICOS</option>
+                        <option value="25">FUENTES DE HACES</option>
+                        <option value="26">CINEMATOGRAFIA</option>
+                        <option value="27">CATALISIS</option>
+                        <option value="28">COMPUESTOS</option>
+                        <option value="29">GRAVITACION</option>
                         <option disabled selected>Sub-Diciplina *</option>
                     </select>
                     
                     <select name="Apoyo" class="custom-select mt-3" id="apoyoConacyt">
-                        <option selected>Si</option>
-                        <option selected>No</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
                         <option disabled selected>Apoyo CONACYT </option>
                     </select>
 
