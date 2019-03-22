@@ -13,14 +13,14 @@
             <div class="col-6">
                 <h5>Informacion del Libro</h5>
                 <form action="" method="post">
-                    <input type="text" class="form-control mt-3" id="isbn" placeholder="ISBN">
-                    <input type="text" class="form-control mt-3" id="tituloLibro" placeholder="Titulo del Libro *" required>
-                    <input type="number" min="1980" max="2019" step="1" class="form-control mt-3" id="anioEdicion" placeholder="Año de Creacion *" required>
-                    <input type="number" min="1" max="10" step="1" class="form-control mt-3" id="volumen" placeholder="Volumen *" required>
-                    <input type="number" min="1" max="10" step="1" class="form-control mt-3" id="tomo" placeholder="Tomo *" required>
-                    <input type="number" min="1980" max="2019" step="1" class="form-control mt-3" id="anioEdicion" placeholder="Año de Edición *" required>
-                    <input type="text" class="form-control mt-3" id="editorial" placeholder="Editorial">
-                    <input type="number" min="1" max="4000" step="1" class="form-control mt-3" id="noPaginas" placeholder="Numero de Paginas *" required>
+                    <input type="text" class="form-control mt-3" name="isbn" id="isbn" placeholder="ISBN">
+                    <input type="text" class="form-control mt-3" name="tituloLibro" id="tituloLibro" placeholder="Titulo del Libro *" required>
+                    <input type="number" min="1980" max="2019" step="1" class="form-control mt-3" name="anioCreacion" id="anioCreacion" placeholder="Año de Creacion *" required>
+                    <input type="number" min="1" max="10" step="1" class="form-control mt-3" name="volumen" id="volumen" placeholder="Volumen *" required>
+                    <input type="number" min="1" max="10" step="1" class="form-control mt-3" name="tomo" id="tomo" placeholder="Tomo *" required>
+                    <input type="number" min="1980" max="2019" step="1" class="form-control mt-3" name="anioEdicion" id="anioEdicion" placeholder="Año de Edición *" required>
+                    <input type="text" class="form-control mt-3" name="editorial" id="editorial" placeholder="Editorial">
+                    <input type="number" min="1" max="4000" step="1" class="form-control mt-3" name="noPaginas" id="noPaginas" placeholder="Numero de Paginas *" required>
                     
                     <select name="financiamiento" class="custom-select mt-3" id="financiamiento">
                         <option value="1">Si</option>
@@ -43,9 +43,9 @@
                         <option disabled selected>Idioma *</option>
                     </select>
                     
-                    <input type="text" class="form-control mt-3" id="palabra1" placeholder="Palabra Clave 1">
-                    <input type="text" class="form-control mt-3" id="palabra2" placeholder="Palabra Clave 2">
-                    <input type="text" class="form-control mt-3" id="palabra3" placeholder="Palabra Clave 3">
+                    <input type="text" class="form-control mt-3" name="palabra1" id="palabra1" placeholder="Palabra Clave 1">
+                    <input type="text" class="form-control mt-3" name="palabra2" id="palabra2" placeholder="Palabra Clave 2">
+                    <input type="text" class="form-control mt-3" name="palabra3" id="palabra3" placeholder="Palabra Clave 3">
                     <br>
                     <h5>Area de Conocimiento</h5>
                     
@@ -154,7 +154,13 @@
                         <option disabled selected>Sub-Diciplina *</option>
                     </select>
                     
-                    <textarea class="form-control mt-3 mb-5" rows="5" id="autores" placeholder="Autores *" required></textarea>
+                    <select name="apoyoCona" class="custom-select mt-3" id="apoyoCona">
+                        <option value="1">SI</option>
+                        <option value="2">No</option>
+                        <option disabled selected>Apoyo CONACYT *</option>
+                    </select>
+                    
+                    <textarea class="form-control mt-3 mb-5" rows="5" name="autores" id="autores" placeholder="Autores *" required></textarea>
                     
                     <button type="submit" class="btn btn-success mt-4">Registrar Libro</button>
                 </form>

@@ -13,16 +13,16 @@
             <div class="col-6">
                 <h5>Informacion del Capitulo</h5>
                 <form action="" method="post">
-                    <input type="text" class="form-control mt-3" id="tituloLibro" placeholder="Titulo del Libro *">
-                    <input type="text" class="form-control mt-3" id="tituloCap" placeholder="Titulo del Capitulo *">
-                    <input type="text" class="form-control mt-3" id="numeroCap" placeholder="Numero de Capitulo *" required>
-                    <input type="number" min="1" max="10000" step="1" class="form-control mt-3" id="paginaInicio" placeholder="Pagina Inicio *" required>
-                    <input type="number" min="1" max="10000" step="1" class="form-control mt-3" id="paginaFin" placeholder="Pagina Fin *" required>
+                    <input type="text" class="form-control mt-3" name="tituloLibro" id="tituloLibro" placeholder="Titulo del Libro *">
+                    <input type="text" class="form-control mt-3" name="tituloCap" id="tituloCap" placeholder="Titulo del Capitulo *">
+                    <input type="text" class="form-control mt-3" name="numeroCap" id="numeroCap" placeholder="Numero de Capitulo *" required>
+                    <input type="number" min="1" max="10000" step="1" class="form-control mt-3" name="paginaInicio" id="paginaInicio" placeholder="Pagina Inicio *" required>
+                    <input type="number" min="1" max="10000" step="1" class="form-control mt-3" name="paginaFin" id="paginaFin" placeholder="Pagina Fin *" required>
                     
                     
-                    <textarea class="form-control mt-3" rows="5" id="descripcion" placeholder="Descripción *" required></textarea>
+                    <textarea class="form-control mt-3" rows="5" name="descripcion" id="descripcion" placeholder="Descripción *" required></textarea>
                     
-                    <textarea class="form-control mt-3 mb-5" rows="5" id="autores" placeholder="Autores *" required></textarea>
+                    <textarea class="form-control mt-3 mb-5" rows="5" name="autores" id="autores" placeholder="Autores *" required></textarea>
                     
                     <button type="submit" class="btn btn-success mt-4">Registrar Capitulo</button>
                 </form>

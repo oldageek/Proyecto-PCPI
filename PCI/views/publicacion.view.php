@@ -13,12 +13,12 @@
             <div class="col-6">
                 <h5>Información de Publicación</h5>
                 <form action="" method="post">
-                    <input type="text" class="form-control mt-3" id="isnn" placeholder="ISNN">
-                    <input type="text" class="form-control mt-3" id="nombrePublicacion" placeholder="Nombre de la Publicación *" required>
-                    <input type="text" class="form-control mt-3" id="nombreRevista" placeholder="Nombre de la Revista *" required>
-                    <input type="text" class="form-control mt-3" id="correoRevista" placeholder="Correo de la Revista *" required>
-                    <input type="number" min="1" max="4000" step="1" class="form-control mt-3" id="paginaInicio" placeholder="Página de Inicio *" required>
-                    <input type="number" min="1" max="4000" step="1" class="form-control mt-3" id="paginaFin" placeholder="Página de Finalización *" required>
+                    <input type="text" class="form-control mt-3" name="isnn" id="isnn" placeholder="ISNN">
+                    <input type="text" class="form-control mt-3" name="nombrePublicacion" id="nombrePublicacion" placeholder="Nombre de la Publicación *" required>
+                    <input type="text" class="form-control mt-3" name="nombreRevista" id="nombreRevista" placeholder="Nombre de la Revista *" required>
+                    <input type="text" class="form-control mt-3" name="correoRevista" id="correoRevista" placeholder="Correo de la Revista *" required>
+                    <input type="number" min="1" max="4000" step="1" class="form-control mt-3" name="paginaInicio" id="paginaInicio" placeholder="Página de Inicio *" required>
+                    <input type="number" min="1" max="4000" step="1" class="form-control mt-3" name="paginaFin" id="paginaFin" placeholder="Página de Finalización *" required>
                     
                     <select name="financiamiento" class="custom-select mt-3" id="financiamiento">
                         <option value="1">Si</option>
@@ -26,15 +26,15 @@
                         <option disabled selected>Financiamiento *</option>
                     </select>
                     
-                    <input type="number" min="100" max="10000" step="100" class="form-control mt-3" id="importeFinanciado" placeholder="Importe Financiado" required>
+                    <input type="number" min="100" max="10000" step="100" class="form-control mt-3" name="importe" id="importeFinanciado" placeholder="Importe Financiado" required>
 
-                    <select name="Reconocimiento" class="custom-select mt-3" id="reconocimiento">
+                    <select name="reconocimiento" class="custom-select mt-3" id="reconocimiento">
                         <option value="1">Si</option>
                         <option value="2">No</option>
                         <option disabled selected>Reconocimiento *</option>
                     </select>
                    
-                    <input type="text" class="form-control mt-3" id="nombreReconocimiento" placeholder="Nombre del Reconocimiento ">
+                    <input type="text" class="form-control mt-3" name="nombreReconocimiento" id="nombreReconocimiento" placeholder="Nombre del Reconocimiento ">
                     <br>
                     <h5>Area de Conocimiento</h5>
                     
@@ -143,7 +143,7 @@
                         <option disabled selected>Sub-Diciplina *</option>
                     </select>
                     
-                    <textarea class="form-control mt-3 mb-5" rows="5" id="autores" placeholder="Autores *" required></textarea>
+                    <textarea class="form-control mt-3 mb-5" rows="5" name="autores" id="autores" placeholder="Autores *" required></textarea>
                     
                     <button type="submit" class="btn btn-success mt-4">Registrar Publicación </button>
                 </form>

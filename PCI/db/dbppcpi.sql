@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-03-2019 a las 07:31:59
+-- Tiempo de generación: 22-03-2019 a las 06:10:21
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.2
 
@@ -139,8 +139,9 @@ CREATE TABLE `investigadores` (
 CREATE TABLE `libros` (
   `idLibro` int(11) NOT NULL,
   `idInvestigadorLibro` int(11) NOT NULL,
+  `isbn` varchar(30) NOT NULL,
   `titulo` varchar(70) DEFAULT NULL,
-  `anioEdicion` int(11) DEFAULT NULL,
+  `anioCreacion` int(11) DEFAULT NULL,
   `volumen` int(11) DEFAULT NULL,
   `tomo` int(11) DEFAULT NULL,
   `edicion` int(11) DEFAULT NULL,
@@ -198,7 +199,7 @@ CREATE TABLE `proyectos` (
 CREATE TABLE `publicaciones` (
   `idPublicacion` int(11) NOT NULL,
   `idInvestigadorPublicacion` int(11) NOT NULL,
-  `issn` varchar(45) DEFAULT NULL,
+  `isnn` varchar(45) DEFAULT NULL,
   `nombrePublicacion` varchar(45) DEFAULT NULL,
   `nombreRevista` varchar(45) DEFAULT NULL,
   `correoRevista` varchar(30) DEFAULT NULL,

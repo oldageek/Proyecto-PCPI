@@ -13,9 +13,9 @@
             <div class="col-6">
                 <h5>Informacion de Proyecto</h5>
                 <form action="" method="post">
-                    <input type="text" class="form-control mt-3" id="nombreProyecto" placeholder="Nombre del Proyecto *" required>
-                    <input type="text" class="form-control mt-3" id="lineaInvestigacion" placeholder="Línea de Investigación *" required>
-                    <input type="text" class="form-control mt-3" id="instanciaRegistro" placeholder="Instacia del Registro *" required>
+                    <input type="text" class="form-control mt-3" name="nombreProyecto" id="nombreProyecto" placeholder="Nombre del Proyecto *" required>
+                    <input type="text" class="form-control mt-3" name="lineaInvestigacion" id="lineaInvestigacion" placeholder="Línea de Investigación *" required>
+                    <input type="text" class="form-control mt-3" name="instanciaRegistro" id="instanciaRegistro" placeholder="Instacia del Registro *" required>
                     
                     <select name="financiamiento" class="custom-select mt-3" id="financiamiento">
                         <option value="1">Si</option>
@@ -23,17 +23,17 @@
                         <option disabled selected>Financiamiento *</option>
                     </select>
                     
-                    <input type="number" min="100" max="10000" step="100" class="form-control mt-3" name="importe" id="importeFinanciado" placeholder="Importe Financiado *" required>
+                    <input type="number" min="100" max="10000" step="100" class="form-control mt-3" name="importeFinanciado" id="importeFinanciado" placeholder="Importe Financiado *" required>
                     <br>
                     <div class="form-group">
                         <label >Fecha de Inicio</label>
-                        <input type="date" name="bday" max="2100-12-31" 
+                        <input type="date" name="fechaInicio" max="2100-12-31" 
                         min="1950-01-01" class="form-control" id="fechaInicio">
                     </div>
 
                     <div class="form-group">
                         <label >Fecha de Finalización</label>
-                        <input type="date" name="bday" max="2100-12-31" 
+                        <input type="date" name="fechaFin" max="2100-12-31" 
                         min="1950-01-01" class="form-control" id="fechaFin">
                     </div>
 
@@ -43,15 +43,15 @@
                         <option disabled selected>Estatus *</option>
                     </select>
 
-                    <input type="number" min="0" max="100" step="5" class="form-control mt-3" id="porcentajeAvance" placeholder="Porcentaje de Avance *" required>
+                    <input type="number" min="0" max="100" step="5" class="form-control mt-3" name="porcentaje" id="porcentajeAvance" placeholder="Porcentaje de Avance *" required>
 
-                    <select name="Reconocimiento" class="custom-select mt-3" id="reconocimiento">
+                    <select name="reconocimiento" class="custom-select mt-3" id="reconocimiento">
                         <option value="1">Si</option>
                         <option value="2">No</option>
                         <option disabled selected>Reconocimiento </option>
                     </select>
                    
-                    <input type="text" class="form-control mt-3" id="nomReconocimiento" placeholder="Nombre del Reconocimiento ">
+                    <input type="text" class="form-control mt-3" name="nombreReconocimiento" id="nomReconocimiento" placeholder="Nombre del Reconocimiento ">
                     <br>
                     <h5>Descripción del Proyecto</h5>
                     <textarea class="form-control mt-3 mb-5" rows="5" id="descripcion" placeholder="Descripción *" required></textarea>
@@ -162,7 +162,7 @@
                         <option disabled selected>Sub-Diciplina *</option>
                     </select>
                     
-                    <select name="Apoyo" class="custom-select mt-3" id="apoyoConacyt">
+                    <select name="apoyoConacyt" class="custom-select mt-3" id="apoyoConacyt">
                         <option value="1">Si</option>
                         <option value="2">No</option>
                         <option disabled selected>Apoyo CONACYT </option>

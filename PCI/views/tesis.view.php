@@ -15,11 +15,11 @@
                 <form action="" method="post">
                     <br>
                     <h5>Autor</h5>
-                    <input type="text" class="form-control mt-3" id="nombreAutor" placeholder="Nombre *" required>
-                    <input type="text" class="form-control mt-3" id="paterno" placeholder="Apellido Paterno *" required>
-                    <input type="text" class="form-control mt-3" id="materno" placeholder="Apellido Materno *" required>
+                    <input type="text" class="form-control mt-3" name="nombreAutor" id="nombreAutor" placeholder="Nombre *" required>
+                    <input type="text" class="form-control mt-3" name="paterno" id="paterno" placeholder="Apellido Paterno *" required>
+                    <input type="text" class="form-control mt-3" name="materni" id="materno" placeholder="Apellido Materno *" required>
                     <br>
-                    <select name="" class="custom-select mb-4" id="gradoAcademico">
+                    <select name="gradoAcademico" class="custom-select mb-4" id="gradoAcademico">
                         <option value="1">Licenciatura</option>
                         <option value="2">Especialidad</option>
                         <option value="3">Maestria</option>
