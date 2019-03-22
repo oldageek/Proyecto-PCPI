@@ -13,82 +13,89 @@
             <div class="col-6">
                 <h5>Informacion Personal</h5>
                 <form class="formulario" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
-                    <input type="text" class="form-control mt-3" id="curp" placeholder="CURP *">
-                    <input type="text" class="form-control mt-3" id="nombre" placeholder="Nombre *">
-                    <input type="text" class="form-control mt-3" id="apellidopaterno" placeholder="Apellido Paterno *">
-                    <input type="text" class="form-control mt-3" id="apellidomaterno" placeholder="Apellido Materno *">
+                    <input type="text" class="form-control mt-4" name="curp" id="curp" placeholder="CURP *">
+                    <input type="text" class="form-control mt-4" name="nombre" id="nombre" placeholder="Nombre *">
+                    <input type="text" class="form-control mt-4" name="apellidopaterno" id="apellidopaterno" placeholder="Apellido Paterno *">
+                    <input type="text" class="form-control mt-4" name="apellidomaterno" id="apellidomaterno" placeholder="Apellido Materno *">
                     
+                    <label for="genero">Genero:</label>
                     <select name="genero" class="custom-select mt-3" id="genero">
-                        <option value="1">Masculino</option>
-                        <option value="2">Femenino</option>
-                        <option value="3">Otro</option>
-                        <option disabled selected>Genero *</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Otro">Otro</option>
+                        <option disabled selected>- Seleccionar - *</option>
                     </select>
                     
+                    <label for="paisNacimineto">Pais de nacimiento:</label>
                     <select name="paisNacimineto" class="custom-select mt-3 mb-5" id="paisNacimineto">
-                        <option value="1">México</option>
-                        <option value="2">EEUU</option>
-                        <option value="3">Argentina</option>
-                        <option value="4">Colombia</option>
-                        <option value="5">Venezuela</option>
-                        <option value="6">España</option>
-                        <option value="7">Ecuador</option>
-                        <option disabled selected>Pais de Nacimiento *</option>
+                        <option value="México">México</option>
+                        <option value="EEUU">EEUU</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="España">España</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option disabled selected>- Seleccionar - *</option>
                     </select>
                     
-                    <input type="mail" class="form-control mt-3" id="mail" placeholder="Correo electronico">
-                    <input type="password" class="form-control mt-3" id="pass" placeholder="Contraseña">
-                    <input type="password" class="form-control mt-3 mb-5" id="confirmpass" placeholder="Confirmar contraseña">
+                    <input type="mail" class="form-control mt-3" name="mail" id="mail" placeholder="Correo electronico">
+                    <input type="password" class="form-control mt-3" name="pass" id="pass" placeholder="Contraseña">
+                    <input type="password" class="form-control mt-3 mb-5" name="confirmpass" id="confirmpass" placeholder="Confirmar contraseña">
                     
                     <h5>Domicilio</h5>
                     
-                    <input type="text" class="form-control mt-3" id="iduser" placeholder="direccion">
+                    <input type="text" class="form-control mt-2" name="direccion" id="direccion" placeholder="direccion">
                     
+                    <label for="estado">Estado:</label>
                     <select name="estado" class="custom-select mt-3" id="estado">
-                        <option value="1">CDMX</option>
-                        <option value="2">Puebla</option>
-                        <option value="3">Tlaxcala</option>
-                        <option value="4">Morelos</option>
-                        <option value="5">Veracruz</option>
-                        <option value="6">Mexico</option>
-                        <option value="7">Guadalajara</option>
-                        <option disabled selected>Entidad *</option>
+                        <option value="CDMX">CDMX</option>
+                        <option value="Puebla">Puebla</option>
+                        <option value="Tlaxcala">Tlaxcala</option>
+                        <option value="Morelos">Morelos</option>
+                        <option value="Veracruz">Veracruz</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Guadalajara">Guadalajara</option>
+                        <option disabled selected>- Seleccionar - *</option>
                     </select>
                     
+                    <label for="pais">Pais:</label>
                     <select name="pais" class="custom-select mt-3 mb-5" id="pais">
-                        <option value="1">México</option>
-                        <option value="2">EEUU</option>
-                        <option value="3">Argentina</option>
-                        <option value="4">Colombia</option>
-                        <option value="5">Venezuela</option>
-                        <option value="6">España</option>
-                        <option value="7">Ecuador</option>
-                        <option disabled selected>Pais *</option>
+                        <option value="México">México</option>
+                        <option value="EEUU">EEUU</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="España">España</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option disabled selected>- Seleccionar - *</option>
                     </select>
                     
                     
 
                     <h5>Información Institucional</h5>
 
+                    <label for="cargo">Cargo Academico:</label>
                     <select name="cargo" class="custom-select mb-4" id="cargo">
-                        <option value="1">Profesor</option>
-                        <option value="2">Secretario</option>
-                        <option disabled selected>Cargo Academico *</option>
+                        <option value="Profesor">Profesor</option>
+                        <option value="Secretario">Secretario</option>
+                        <option disabled selected>- Seleccionar - *</option>
                     </select>
 
+                    <label for="grado">Grado Academico:</label>
                     <select name="grado" class="custom-select mb-4" id="grado">
-                        <option value="1">Licenciatura</option>
-                        <option value="2">Especialidad</option>
-                        <option value="3">Maestria</option>
-                        <option value="4">Doctorado</option>
-                        <option value="5">Otro</option>
-                        <option disabled selected>Grado Academico</option>
+                        <option value="Licenciatura">Licenciatura</option>
+                        <option value="Especialidad">Especialidad</option>
+                        <option value="Maestria">Maestria</option>
+                        <option value="Doctorado">Doctorado</option>
+                        <option value="Otro">Otro</option>
+                        <option disabled selected>- Seleccionar - *</option>
                     </select>
 
+                    <label for="tipo">Tipo de padron de Investigación:</label>
                     <select name="tipo" class="custom-select mb-4" id="tipo">
-                        <option value="1">Tipo 1</option>
-                        <option value="2">Tipo 2</option>
-                        <option disabled selected>Tipo de padron de Investigación</option>
+                        <option value="Tipo 1">Tipo 1</option>
+                        <option value="Tipo 2">Tipo 2</option>
+                        <option disabled selected>- Seleccionar - *</option>
                     </select>
 
                     <button type="submit" class="btn btn-success mt-4">Registrarse</button>

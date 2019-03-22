@@ -6,7 +6,7 @@ function conexion($bd_config){
 
         return $conexion;
     } catch (PDOException $e) {
-        return false;
+        echo $e;
     }
 }
 
