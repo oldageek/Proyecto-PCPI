@@ -3,9 +3,14 @@ session_start();
 require 'admin/config.php';
 require 'functions.php';
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    //var_dump($_POST);
+$conexion = conexion($bd_config);
+if (!$conexion) {
+    header('Location: ../error.php');
+}
 
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    $id = null;
     $curp = limpiarDatos( $_POST['curp'] );
     $nombre = limpiarDatos( $_POST['nombre'] );
     $apellidoPaterno = limpiarDatos( $_POST['apellidopaterno'] );
@@ -22,41 +27,32 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $grado = $_POST['grado'];
     $tipo = $_POST['tipo'];
 
-    $conexion = conexion($bd_config);
+    $statement = $conexion -> prepare ("INSERT INTO investigadores VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
-    if ($conexion -> connect_errno) {
-        // require 'error.php';
-        die("Error con el servidor");
+    $statement -> bind_param('issssssssssssss', 
+    $id,
+    $curp,
+    $nombre,
+    $apellidoPaterno,
+    $apellidoMaterno,
+    $genero,
+    $paisnacimiento,
+    $direccion,
+    $estado,
+    $pais,
+    $correo,
+    $password,
+    $cargo,
+    $grado,
+    $tipo);
+
+    $statement -> execute();
+    if ($conexion -> affected_rows >= 1) {
+        header("Location http://localhost/Proyecto-PCPI/PCI/index.php");
     }else{
-        $statement = $conexion -> prepare ("INSERT INTO investigadores VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-
-        $statement -> bind_param('issssssssssssss', 
-        $id,
-        $curp,
-        $nombre,
-        $apellidoPaterno,
-        $apellidoMaterno,
-        $genero,
-        $paisnacimiento,
-        $direccion,
-        $estado,
-        $pais,
-        $correo,
-        $password,
-        $cargo,
-        $grado,
-        $tipo);
-
-        $id = null;
-        $statement -> execute();
-        if ($conexion -> affected_rows >= 1) {
-            header("Location http://localhost/Proyecto-PCPI/PCI/index.php");
-        }else{
-            echo 'No se agrego nada';
-        }
+        echo 'No se agrego nada';
     }
 
-    
 }
 
 require 'views/registro.view.php';
