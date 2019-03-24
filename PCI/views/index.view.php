@@ -107,11 +107,11 @@
 
                 <div class="col mt-3 mb-3">
                     <div class="card border-dark" style="width: 18rem;">
-                        <img class="card-img-top" src="img/contaEnlace6.jpg" alt="Imagen de card">
+                        <img class="card-img-top" src="img/contaEnlace5.jpg" alt="Imagen de card">
                         <div class="card-body">
-                            <h5 class="card-title">Card Titulo</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, harum?</p>
-                            <a href="#" class="btn btn-primary">Leer mas...</a>
+                            <h5 class="card-title">Mapa Curricular</h5>
+                            <p class="card-text">Mapa curricular del programa educativo MINERVA de la Facultad de Contaduria Pública</p>
+                            <a href=" https://www.google.com/url?sa=t&source=web&rct=j&url=http://cmas.siu.buap.mx/portal_pprd/work/sites/contaduria/resources/LocalContent/233/2/MAPA%2520CURRICULAR%2520LCP-SEMESTRAL.pdf&ved=2ahUKEwjFlfnh74_hAhVDSq0KHXBRAAoQFjAAegQIBRAB&usg=AOvVaw1grM1rsugK8S6Zu2ahSdmd " target="_blank" class="btn btn-info">Leer mas...</a>
                         </div>
                     </div>
                 </div>

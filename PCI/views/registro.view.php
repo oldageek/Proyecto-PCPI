@@ -11,7 +11,7 @@
         </div>
         <div class="row mt-4">
             <div class="col-6">
-                <h5>Informacion Personal</h5>
+                <h4>Informacion Personal</h4>
                 <form class="formulario" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                     <input type="text" class="form-control mt-4" name="curp" id="curp" placeholder="CURP *">
                     <input type="text" class="form-control mt-4" name="nombre" id="nombre" placeholder="Nombre *">
@@ -42,7 +42,7 @@
                     <input type="password" class="form-control mt-3" name="pass" id="pass" placeholder="Contraseña">
                     <input type="password" class="form-control mt-3 mb-5" name="confirmpass" id="confirmpass" placeholder="Confirmar contraseña">
                     
-                    <h5>Domicilio</h5>
+                    <h4>Domicilio</h4>
                     
                     <input type="text" class="form-control mt-3 mb-3" name="direccion" id="direccion" placeholder="direccion">
                     
@@ -72,7 +72,7 @@
                     
                     
 
-                    <h5>Información Institucional</h5>
+                    <h4>Información Institucional</h4>
 
                     <label for="cargo mt-3">Cargo Academico:</label>
                     <select name="cargo" class="custom-select mb-4" id="cargo">

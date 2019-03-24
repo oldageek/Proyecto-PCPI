@@ -53,6 +53,13 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="input-group w-auto">
+                    <input type="text" id="buscar" class="form-control" placeholder="Buscar">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>

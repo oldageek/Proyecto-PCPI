@@ -20,9 +20,9 @@
                     <i class="card-img-top fas fa-user-circle"  alt="Card image cap"></i>
                     <div class="card-body">
                         <h3 class="card-title">Inicio de Sesion</h3>
-                        <form action="" method="post">
-                            <input type="text" class="form-control form-contro-lg  mt-3" id="nombre" placeholder="ID Usuario">
-                            <input type="password" class="form-control form-contro-lg  mt-3" id="contrasena" placeholder="Contraseña">
+                        <form method="post" class="formularioLog" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+                            <input type="mail" class="form-control form-contro-lg  mt-3 mb-2" name="correo" id="correo" placeholder="Correo electronico">
+                            <input type="password" class="form-control form-contro-lg  mt-3 mb-2" name="contrasena" id="contrasena" placeholder="Contraseña">
                             <button type="submit" class="btn btn-success mt-4">Iniciar Sesion</button>
                         </form>
                     </div>
