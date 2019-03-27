@@ -28,12 +28,12 @@
                     
                     <label for="paisNacimineto">Pais de nacimiento:</label>
                     <select name="paisNacimineto" class="custom-select mb-5" id="paisNacimineto">
-                        <option value="México">México</option>
+                        <option value="México">Mexico</option>
                         <option value="EEUU">EEUU</option>
                         <option value="Argentina">Argentina</option>
                         <option value="Colombia">Colombia</option>
                         <option value="Venezuela">Venezuela</option>
-                        <option value="España">España</option>
+                        <option value="España">Espana</option>
                         <option value="Ecuador">Ecuador</option>
                         <option disabled selected>- Seleccionar - *</option>
                     </select>
@@ -60,7 +60,7 @@
                     
                     <label for="pais">Pais:</label>
                     <select name="pais" class="custom-select mb-5" id="pais">
-                        <option value="México">México</option>
+                        <option value="México">Mexico</option>
                         <option value="EEUU">EEUU</option>
                         <option value="Argentina">Argentina</option>
                         <option value="Colombia">Colombia</option>
