@@ -18,13 +18,13 @@
                     <input type="text" class="form-control mt-3" name="nombreDocente" id="nombreDocente" placeholder="Nombre del Docente *" required>
                     
                        <select name="pais" class="custom-select mt-3" id="pais">
-                        <option value="1">Mexico</option>
-                        <option value="2">España</option>
-                        <option value="3">Colombia</option>
-                        <option value="4">EEUU</option>
-                        <option value="5">Argentina</option>
-                        <option value="6">Chile</option>
-                        <option value="7">Canada</option>
+                        <option value="Mexico">MÉXICO</option>
+                        <option value="Espana">ESPAÑA</option>
+                        <option value="Colombia">COLOMBIA</option>
+                        <option value="EEUU">EEUU</option>
+                        <option value="Argentina">ARGENTINA</option>
+                        <option value="Chile">CHILE</option>
+                        <option value="Canada">CANADA</option>
                         <option disabled selected>Pais donde fue el Congreso *</option>
                     </select>
                     
@@ -39,14 +39,14 @@
                     <input type="text" class="form-control mt-3" id="fechaFin" placeholder="Fecha de Fin del Congreso *" required>
                     
                     <select name="tipoParticipacion" class="custom-select mt-3" id="tipoParticipacion">
-                        <option value="1">Conferencia magistral</option>
-                        <option value="2">Moderador</option>
-                        <option value="3">Organizador del evento</option>
-                        <option value="4">Participante en mesa redonda</option>
-                        <option value="5">Ponencia</option>
-                        <option value="6">Poster</option>
-                        <option value="7">Presentacion de articulo</option>
-                        <option value="8">Folder</option>
+                        <option value="Conferencia magistral">CONFERENCIA MAGISTRAL</option>
+                        <option value="Moderador">MODERADOR</option>
+                        <option value="Organizador del evento">ORGANIZADOR DEL EVENTO</option>
+                        <option value="Participante en mesa redonda">PARTICIPANTE DE MESA REDONDA</option>
+                        <option value="Ponencia">PONENCIA</option>
+                        <option value="Poster">POSTER</option>
+                        <option value="Presentacion de articulo">PRESENTACIÓN DE ARTICULO</option>
+                        <option value="Folder">FOLDER</option>
                         <option disabled selected>Tipo de Participacion en el Congreso *</option>
                     </select>
                     

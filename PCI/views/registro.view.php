@@ -28,12 +28,11 @@
                     
                     <label for="paisNacimineto">Pais de nacimiento:</label>
                     <select name="paisNacimineto" class="custom-select mb-5" id="paisNacimineto">
-                        <option value="México">Mexico</option>
+                        <option value="Mexico">México</option>
                         <option value="EEUU">EEUU</option>
                         <option value="Argentina">Argentina</option>
                         <option value="Colombia">Colombia</option>
                         <option value="Venezuela">Venezuela</option>
-                        <option value="España">Espana</option>
                         <option value="Ecuador">Ecuador</option>
                         <option disabled selected>- Seleccionar - *</option>
                     </select>
@@ -53,19 +52,17 @@
                         <option value="Tlaxcala">Tlaxcala</option>
                         <option value="Morelos">Morelos</option>
                         <option value="Veracruz">Veracruz</option>
-                        <option value="Mexico">Mexico</option>
                         <option value="Guadalajara">Guadalajara</option>
                         <option disabled selected>- Seleccionar - *</option>
                     </select>
                     
                     <label for="pais">Pais:</label>
                     <select name="pais" class="custom-select mb-5" id="pais">
-                        <option value="México">Mexico</option>
+                        <option value="Mexico">México</option>
                         <option value="EEUU">EEUU</option>
                         <option value="Argentina">Argentina</option>
                         <option value="Colombia">Colombia</option>
                         <option value="Venezuela">Venezuela</option>
-                        <option value="España">España</option>
                         <option value="Ecuador">Ecuador</option>
                         <option disabled selected>- Seleccionar - *</option>
                     </select>
@@ -93,8 +90,10 @@
 
                     <label for="tipo">Tipo de padron de Investigación:</label>
                     <select name="tipo" class="custom-select mb-4" id="tipo">
-                        <option value="Tipo 1">Tipo 1</option>
-                        <option value="Tipo 2">Tipo 2</option>
+                        <option value="ESNI">ESNI</option>
+                        <option value="BIEP">BIEP</option>
+                        <option value="Ambos">Ambos</option>
+                        <option value="Ninguno">Ninguno</option>
                         <option disabled selected>- Seleccionar - *</option>
                     </select>
 

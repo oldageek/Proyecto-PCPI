@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-03-2019 a las 06:10:21
+-- Tiempo de generación: 27-03-2019 a las 23:46:59
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.2
 
@@ -58,9 +58,7 @@ CREATE TABLE `articulos` (
   `palabraClave2` varchar(45) DEFAULT NULL,
   `palabraClave3` varchar(45) DEFAULT NULL,
   `area` varchar(45) DEFAULT NULL,
-  `campo` varchar(45) DEFAULT NULL,
-  `diciplina` varchar(45) DEFAULT NULL,
-  `subdiciplina` varchar(45) DEFAULT NULL,
+  `subArea` varchar(45) DEFAULT NULL,
   `apoyoConacyt` varchar(2) DEFAULT NULL,
   `autores` varchar(400) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -115,20 +113,27 @@ CREATE TABLE `congresos` (
 CREATE TABLE `investigadores` (
   `idInvestigador` int(11) NOT NULL,
   `curp` varchar(18) DEFAULT NULL,
-  `nombre` varchar(50) DEFAULT NULL,
-  `paterno` varchar(50) DEFAULT NULL,
-  `materno` varchar(50) DEFAULT NULL,
-  `genero` varchar(45) DEFAULT NULL,
-  `paisNacimiento` varchar(50) DEFAULT NULL,
-  `domicilio` varchar(45) DEFAULT NULL,
-  `entidad` varchar(50) DEFAULT NULL,
-  `pais` varchar(45) DEFAULT NULL,
-  `correo` varchar(45) DEFAULT NULL,
-  `password` varchar(20) DEFAULT NULL,
-  `carAcademico` varchar(45) DEFAULT NULL,
-  `gradoAcademico` varchar(45) DEFAULT NULL,
-  `tipoPadron` varchar(45) DEFAULT NULL
+  `nombre` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `paterno` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `materno` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `genero` varchar(45) CHARACTER SET utf8 COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `paisNacimiento` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `domicilio` varchar(45) CHARACTER SET utf8 COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `entidad` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `pais` varchar(45) CHARACTER SET utf8 COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `correo` varchar(45) CHARACTER SET utf8 COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `pass` varchar(30) CHARACTER SET utf8 COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `carAcademico` varchar(45) CHARACTER SET utf8 COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `gradoAcademico` varchar(45) CHARACTER SET utf8 COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `tipoPadron` varchar(45) CHARACTER SET utf8 COLLATE utf8_spanish2_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `investigadores`
+--
+
+INSERT INTO `investigadores` (`idInvestigador`, `curp`, `nombre`, `paterno`, `materno`, `genero`, `paisNacimiento`, `domicilio`, `entidad`, `pais`, `correo`, `pass`, `carAcademico`, `gradoAcademico`, `tipoPadron`) VALUES
+(4, '12345', 'Oscar', 'Tapia', 'Carbajal', 'Masculino', 'MÃ©xico', '143 F poniente', 'Puebla', 'MÃ©xico', 'oscarsk69@gmail.com', '1234', 'Secretario', 'Especialidad', 'Tipo 1');
 
 -- --------------------------------------------------------
 
@@ -155,9 +160,7 @@ CREATE TABLE `libros` (
   `palabraClave2` varchar(45) DEFAULT NULL,
   `palabraClave3` varchar(45) DEFAULT NULL,
   `area` varchar(45) DEFAULT NULL,
-  `campo` varchar(45) DEFAULT NULL,
-  `diciplina` varchar(45) DEFAULT NULL,
-  `subDiciplina` varchar(45) DEFAULT NULL,
+  `subArea` varchar(45) DEFAULT NULL,
   `apoyoConacyt` varchar(2) DEFAULT NULL,
   `Autores` varchar(400) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -184,9 +187,7 @@ CREATE TABLE `proyectos` (
   `nomReconocimiento` varchar(45) DEFAULT NULL,
   `descripcion` varchar(400) DEFAULT NULL,
   `area` varchar(45) DEFAULT NULL,
-  `campo` varchar(45) DEFAULT NULL,
-  `diciplina` varchar(45) DEFAULT NULL,
-  `subDiciplina` varchar(45) DEFAULT NULL,
+  `subArea` varchar(45) DEFAULT NULL,
   `apoyoConacyt` varchar(2) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -210,9 +211,8 @@ CREATE TABLE `publicaciones` (
   `reconocimiento` varchar(2) DEFAULT NULL,
   `nombreReconocimiento` varchar(40) DEFAULT NULL,
   `area` varchar(45) DEFAULT NULL,
-  `campo` varchar(45) DEFAULT NULL,
-  `diciplina` varchar(45) DEFAULT NULL,
-  `subDiciplina` varchar(45) DEFAULT NULL,
+  `subArea` varchar(45) DEFAULT NULL,
+  `apoyoConacyt` varchar(10) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
   `autores` varchar(400) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -229,9 +229,9 @@ CREATE TABLE `tesis` (
   `paterno` varchar(45) DEFAULT NULL,
   `materno` varchar(45) DEFAULT NULL,
   `gradoAcademico` varchar(45) DEFAULT NULL,
-  `campo` varchar(45) DEFAULT NULL,
-  `diciplina` varchar(45) DEFAULT NULL,
-  `subDiciplina` varchar(45) DEFAULT NULL
+  `area` varchar(45) DEFAULT NULL,
+  `subArea` varchar(45) DEFAULT NULL,
+  `apoyoConacyt` varchar(10) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -331,7 +331,7 @@ ALTER TABLE `congresos`
 -- AUTO_INCREMENT de la tabla `investigadores`
 --
 ALTER TABLE `investigadores`
-  MODIFY `idInvestigador` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idInvestigador` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `libros`

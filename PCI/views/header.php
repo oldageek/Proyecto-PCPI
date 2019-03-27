@@ -4,7 +4,8 @@
 <head>
     <title>PCPI</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-    <meta charset="utf-8">
+    <!--meta charset="utf-8"-->
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
@@ -56,6 +57,12 @@
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">Congresos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Tesis</a>
                         </li>
                     </ul>
                 </div>
