@@ -34,7 +34,7 @@
         </div>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-2">
             <div class="container">
-                <a href="#" class="navbar-brand">Menu</a>
+                <a href="#" class="navbar-brand">Mi Perfil</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de navegacion">
                     <span class="navbar-toggler-icon"></span>

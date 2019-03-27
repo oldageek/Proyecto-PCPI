@@ -1,9 +1,9 @@
 <?php require 'header.php'; ?>
 
     <div class="container"> 
-        <div class="row-auto">
+        <!--div class="row-auto">
             <a href="index.php" class="icono"><i class="fas fa-home"></i></a>
-        </div>
+        </div-->
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
                 <h3>Registro de Capitulo <i class="fas fa-search"></i></h3>

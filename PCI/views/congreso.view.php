@@ -1,9 +1,9 @@
 <?php require 'header.php'; ?>
 
     <div class="container"> 
-        <div class="row-auto">
+        <!--div class="row-auto">
             <a href="index.php" class="icono"><i class="fas fa-home"></i></a>
-        </div>
+        </div-->
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
                 <h3>Registro de Congreso <!--<i class="fas fa-search"></i>--></h3>
@@ -18,7 +18,7 @@
                     <input type="text" class="form-control mt-3" name="nombreDocente" id="nombreDocente" placeholder="Nombre del Docente *" required>
                     
                        <select name="pais" class="custom-select mt-3" id="pais">
-                        <option value="1">México</option>
+                        <option value="1">Mexico</option>
                         <option value="2">España</option>
                         <option value="3">Colombia</option>
                         <option value="4">EEUU</option>

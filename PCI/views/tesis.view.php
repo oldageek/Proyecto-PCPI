@@ -1,9 +1,9 @@
 <?php require 'header.php'; ?>
 
     <div class="container"> 
-        <div class="row-auto">
+        <!--div class="row-auto">
             <a href="index.php" class="icono"><i class="fas fa-home"></i></a>
-        </div>
+        </div-->
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
                 <h3>Registro de Tesis <!--<i class="fas fa-search"></i>--></h3>
@@ -29,28 +29,28 @@
                     </select>
                     
                     <select name="campo" class="custom-select mt-3" id="campo">
-                        <option value="1">LÓGICA</option>
-                        <option value="2">MATEMÁTICAS</option>
-                        <option value="3">ASTRONOMÍA Y ASTROFÍSICA</option>
-                        <option value="4">FÍSICA</option>
+                        <option value="1">LOGICA</option>
+                        <option value="2">MATEMATICAS</option>
+                        <option value="3">ASTRONOMIA Y ASTROFISICA</option>
+                        <option value="4">FISICA</option>
                         <option value="5">CIENCIAS DE LA TIERRA Y EL COSMOS</option>
                         <option value="6">QUIMICA</option>
                         <option value="7">CIENCIAS DE LA VIDA</option>
                         <option value="8">MEDICINA Y PATOLOGIA HUMANA</option>
                         <option value="9">ANTROPOLOGÍA</option>
                         <option value="10">HISTORIA</option>
-                        <option value="11">LINGÜISTICA</option>
-                        <option value="12">PEDAGOGÍA</option>
-                        <option value="13">PSICOLOGÍA</option>
+                        <option value="11">LINGUISTICA</option>
+                        <option value="12">PEDAGOGIA</option>
+                        <option value="13">PSICOLOGIA</option>
                         <option value="14">ARTES Y LETRAS</option>
-                        <option value="15">ÉTICA</option>
-                        <option value="16">FILOSOFÍA</option>
-                        <option value="17">DEMOGRAFÍA</option>
-                        <option value="18">CIENCIAS ECONÓMICAS</option>
+                        <option value="15">ETICA</option>
+                        <option value="16">FILOSOFIA</option>
+                        <option value="17">DEMOGRAFIA</option>
+                        <option value="18">CIENCIAS ECONOMICAS</option>
                         <option value="19">GEOGRAFIA</option>
-                        <option value="20">CIENCIAS JURÍDICAS Y DERECHO</option>
-                        <option value="21">CIENCIAS POLÍTICAS</option>
-                        <option value="22">SOCIOLOGÍA</option>
+                        <option value="20">CIENCIAS JURIDICAS Y DERECHO</option>
+                        <option value="21">CIENCIAS POLITICAS</option>
+                        <option value="22">SOCIOLOGIA</option>
                         <option value="23">CIENCIAS AGRONOMICAS Y VETERINARIAS</option>
                         <option value="24">CIENCIAS DE LA TECNOLOGIA</option>
                         <option disabled selected>Campo *</option>
