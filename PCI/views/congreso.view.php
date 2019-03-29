@@ -35,8 +35,8 @@
                     </select>
                     
                     <input type="number" min="100" max="10000" step="100" class="form-control mt-3" name="importe" id="importe" placeholder="Importe Financiado *" required>
-                    <input type="text" class="form-control mt-3" id="fechaInicio" placeholder="Fecha de Inicio del Congreso *" required>
-                    <input type="text" class="form-control mt-3" id="fechaFin" placeholder="Fecha de Fin del Congreso *" required>
+                    <input type="text" class="form-control mt-3" name="fechaInicio" id="fechaInicio" placeholder="Fecha de Inicio del Congreso *" required>
+                    <input type="text" class="form-control mt-3" name="fechaFin" id="fechaFin" placeholder="Fecha de Fin del Congreso *" required>
                     
                     <select name="tipoParticipacion" class="custom-select mt-3" id="tipoParticipacion">
                         <option value="Conferencia magistral">CONFERENCIA MAGISTRAL</option>
