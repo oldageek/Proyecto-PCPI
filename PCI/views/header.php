@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:300,400,500i,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/usuario.css">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
                             <a href="#">Configuraciones <i class="fas fa-users-cog"></i></a>
                         </button>
                         <button class="btn btn-danger btn-sm">
-                            <a href="#">Cerrar Sesion <i class="fas fa-sign-out-alt"></i></a>
+                            <a href="cerrar.php">Cerrar Sesion <i class="fas fa-sign-out-alt"></i></a>
                         </button>
                     </div>
                 </div>

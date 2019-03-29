@@ -15,6 +15,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $contrasena = $_POST['contrasena'];
     }
 
+    //Correcion de insercion en la base de datos con metacaracteres
+    $conexion -> set_charset("utf8");
     $statement = $conexion -> prepare(
         'SELECT correo, pass FROM investigadores WHERE correo = ? AND pass = ?'
     );

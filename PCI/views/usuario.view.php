@@ -1,15 +1,19 @@
 <?php require 'header.php'; ?>
 
 <div class="container">
+    <div class="row mt-4 mb-4">
+        <div class="col-12">
+            <img id="img-principal" src="img/bienvenidos.png" alt="Image not Found">
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-auto align-self-center">
+            <h2>Guia de Navegación</h2>
+        </div>
+    </div>
     <div class="row">
         <div class="col">
-            <h3>Bienvenido ya a ingresado a su cuenta</h3>
-        </div>
-        <div class="col">
-            <pre>
-                Ahora vamos a tener que disenar 
-                la interface de los usuarios
-            </pre>
+            
         </div>
     </div>
 </div>
