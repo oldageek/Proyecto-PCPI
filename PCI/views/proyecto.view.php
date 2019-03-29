@@ -43,7 +43,7 @@
                         <option disabled selected>Estatus *</option>
                     </select>
 
-                    <input type="number" min="0" max="100" step="5" class="form-control mt-3" name="porcentaje" id="porcentajeAvance" placeholder="Porcentaje de Avance *" required>
+                    <input type="number" min="0" max="100" step="5" class="form-control mt-3" name="porcentajeAvance" id="porcentajeAvance" placeholder="Porcentaje de Avance *" required>
 
                     <select name="reconocimiento" class="custom-select mt-3" id="reconocimiento">
                         <option value="1">Si</option>
@@ -51,7 +51,7 @@
                         <option disabled selected>Reconocimiento </option>
                     </select>
                    
-                    <input type="text" class="form-control mt-3" name="nombreReconocimiento" id="nomReconocimiento" placeholder="Nombre del Reconocimiento ">
+                    <input type="text" class="form-control mt-3" name="nomReconocimiento" id="nomReconocimiento" placeholder="Nombre del Reconocimiento ">
                     <br>
                     <h5>Descripción del Proyecto</h5>
                     <textarea class="form-control mt-3 mb-5" rows="5" id="descripcion" placeholder="Descripción *" required></textarea>
@@ -64,7 +64,7 @@
                         <option disabled selected>Area *</option>
                     </select>
                     
-                    <select name="subArea" class="custom-select mt-3" id="campo">
+                    <select name="subArea" class="custom-select mt-3" id="subArea">
                         <option value="Contabilidad">CONTABILIDAD</option>
                         <option value="Contabilidad Gerencial">CONTABILIDAD GERENCIAL</option>
                         <option value="Auditoria">AUDITORIA</option>
@@ -79,7 +79,7 @@
                     
                     
                     
-                    <select name="apoyoCona" class="custom-select mt-3" id="apoyoCona">
+                    <select name="apoyoCona" class="custom-select mt-3" id="apoyoConacyt">
                         <option value="Si">SI</option>
                         <option value="NO">No</option>
                         <option disabled selected>Apoyo CONACYT *</option>

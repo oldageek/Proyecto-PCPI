@@ -141,7 +141,7 @@ INSERT INTO `investigadores` (`idInvestigador`, `curp`, `nombre`, `paterno`, `ma
 -- Estructura de tabla para la tabla `libros`
 --
 
-CREATE TABLE `libros` (
+CREATE TABLE `libros` ( 
   `idLibro` int(11) NOT NULL,
   `idInvestigadorLibro` int(11) NOT NULL,
   `isbn` varchar(30) NOT NULL,
@@ -197,7 +197,7 @@ CREATE TABLE `proyectos` (
 -- Estructura de tabla para la tabla `publicaciones`
 --
 
-CREATE TABLE `publicaciones` (
+CREATE TABLE `publicaciones` ( 
   `idPublicacion` int(11) NOT NULL,
   `idInvestigadorPublicacion` int(11) NOT NULL,
   `isnn` varchar(45) DEFAULT NULL,

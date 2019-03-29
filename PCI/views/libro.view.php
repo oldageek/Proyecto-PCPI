@@ -14,13 +14,13 @@
                 <h5>Informacion del Libro</h5>
                 <form action="" method="post">
                     <input type="text" class="form-control mt-3" name="isbn" id="isbn" placeholder="ISBN">
-                    <input type="text" class="form-control mt-3" name="tituloLibro" id="tituloLibro" placeholder="Titulo del Libro *" required>
+                    <input type="text" class="form-control mt-3" name="titulo" id="titulo" placeholder="Titulo del Libro *" required>
                     <input type="number" min="1980" max="2019" step="1" class="form-control mt-3" name="anioCreacion" id="anioCreacion" placeholder="Año de Creacion *" required>
                     <input type="number" min="1" max="10" step="1" class="form-control mt-3" name="volumen" id="volumen" placeholder="Volumen *" required>
                     <input type="number" min="1" max="10" step="1" class="form-control mt-3" name="tomo" id="tomo" placeholder="Tomo *" required>
-                    <input type="number" min="1980" max="2019" step="1" class="form-control mt-3" name="anioEdicion" id="anioEdicion" placeholder="Año de Edición *" required>
+                    <input type="number" min="1980" max="2019" step="1" class="form-control mt-3" name="edicion" id="edicion" placeholder="Año de Edición *" required>
                     <input type="text" class="form-control mt-3" name="editorial" id="editorial" placeholder="Editorial">
-                    <input type="number" min="1" max="4000" step="1" class="form-control mt-3" name="noPaginas" id="noPaginas" placeholder="Numero de Paginas *" required>
+                    <input type="number" min="1" max="4000" step="1" class="form-control mt-3" name="numPaginas" id="numPaginas" placeholder="Numero de Paginas *" required>
                     
                     <select name="financiamiento" class="custom-select mt-3" id="financiamiento">
                         <option value="Si">SI</option>
@@ -28,7 +28,7 @@
                         <option disabled selected>Financiamiento *</option>
                     </select>
                     
-                    <input type="number" min="100" max="10000" step="100" class="form-control mt-3" name="importe" id="importe" placeholder="Importe Financiado *" required>
+                    <input type="number" min="100" max="10000" step="100" class="form-control mt-3" name="importeFinanciado" id="importeFinanciado" placeholder="Importe Financiado *" required>
                     
                     <select name="estatus" class="custom-select mt-3" id="estatus">
                         <option value="En Proceso">EN PROCESO</option>
@@ -45,9 +45,9 @@
                         <option disabled selected>Idioma *</option>
                     </select>
                     
-                    <input type="text" class="form-control mt-3" name="palabra1" id="palabra1" placeholder="Palabra Clave 1">
-                    <input type="text" class="form-control mt-3" name="palabra2" id="palabra2" placeholder="Palabra Clave 2">
-                    <input type="text" class="form-control mt-3" name="palabra3" id="palabra3" placeholder="Palabra Clave 3">
+                    <input type="text" class="form-control mt-3" name="palabraClave1" id="palabraClave1" placeholder="Palabra Clave 1">
+                    <input type="text" class="form-control mt-3" name="palabraClave2" id="palabraClave2" placeholder="Palabra Clave 2">
+                    <input type="text" class="form-control mt-3" name="palabraClave3" id="palabraClave3" placeholder="Palabra Clave 3">
                     <br>
                     <h5>Area de Conocimiento</h5>
                     
@@ -71,7 +71,7 @@
                         <option disabled selected>Sub-Area *</option>
                     </select>
                     
-                    <select name="apoyoCona" class="custom-select mt-3" id="apoyoCona">
+                    <select name="apoyoConacyt" class="custom-select mt-3" id="apoyoConacyt">
                         <option value="Si">SI</option>
                         <option value="NO">No</option>
                         <option disabled selected>Apoyo CONACYT *</option>
