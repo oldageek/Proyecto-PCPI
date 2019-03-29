@@ -12,19 +12,18 @@
         <div class="row mt-4">
             <div class="col-6">
                 <h5>Informacion de Tesis</h5>
-                <form action="" method="post">
+                <form action="" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                     <br>
                     <h5>Autor</h5>
                     <input type="text" class="form-control mt-3" name="nombreAutor" id="nombreAutor" placeholder="Nombre *" required>
                     <input type="text" class="form-control mt-3" name="paterno" id="paterno" placeholder="Apellido Paterno *" required>
-                    <input type="text" class="form-control mt-3" name="materni" id="materno" placeholder="Apellido Materno *" required>
+                    <input type="text" class="form-control mt-3" name="materno" id="materno" placeholder="Apellido Materno *" required>
                     <br>
                     <select name="gradoAcademico" class="custom-select mb-4" id="gradoAcademico">
-                        <option value="1">Licenciatura</option>
-                        <option value="2">Especialidad</option>
-                        <option value="3">Maestria</option>
-                        <option value="4">Doctorado</option>
-                        <option value="5">Otro</option>
+                        <option value="Licenciatura">LICENCIATURA</option>
+                        <option value="Especialidad">ESPECIALIDAD</option>
+                        <option value="Maestria">MAESTRIA</option>
+                        <option value="Doctorado">DOCTORADO</option>
                         <option disabled selected>Grado Academico *</option>
                     </select>
                     
