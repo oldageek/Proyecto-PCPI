@@ -22,9 +22,43 @@
             </div>
         </div>
     </footer>
+    
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script>
+		$('.datepicker').datepicker({
+            format: 'mm/dd/yyyy',
+            startDate: '-3d'
+        });
+        $('.input-daterange input').each(function() {
+            $(this).datepicker({
+                        todayBtn: "linked",
+                        keyboardNavigation: false,
+                        forceParse: false,
+                        calendarWeeks: true,
+                        autoclose: true,
+                        format: 'dd/mm/yyyy',
+                        orientation: "top auto"
+                    });
+        });
+        $('#datepicker').datepicker();
+        $('#datepicker').on('changeDate', function() {
+            $('#my_hidden_input').val(
+                $('#datepicker').datepicker('getFormattedDate')
+            );
+        });
+        $('#data_1 .input-group.date').datepicker({
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            calendarWeeks: true,
+            autoclose: true,
+            format: 'dd/mm/yyyy',
+            orientation: "top auto"
+        });
+	</script>
 </body>
 
 </html>
