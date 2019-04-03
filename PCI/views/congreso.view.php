@@ -34,33 +34,25 @@
                         <option disabled selected>Financiamiento *</option>
                     </select>
                     
-<<<<<<< HEAD
                     <input type="number" min="100" max="10000" step="100" class="form-control mt-3" name="importe" id="importe" placeholder="Importe Financiado *" required>
 
-                    <div class="form-group">
-                        <div class='input-group date' id='datetimepicker'>
+                    <div class="form-group" id='datetimepicker'>
+                        <div class='input-group date'>
                             <input type="text" class="form-control mt-3" readonly name="fechaInicio" id="fechaInicio" placeholder="Fecha de Inicio del Congreso *" required>
-                            <span class="input-group-addon" style="border-radius: 5px 0px 0px 5px;">
+                            <span class="input-group-addon" >
                                 <i class="fa fa-calendar"></i>
                             </span>
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <div class='input-group date' id='datetimepicker2'>
+                    <div class="form-group" id='datetimepicker2'>
+                        <div class='input-group date'>
                             <input type="text" class="form-control mt-3" readonly name="fechaFin" id="fechaFin" placeholder="Fecha de Fin del Congreso *" required>
-                            <span class="input-group-addon" style="border-radius: 5px 0px 0px 5px;">
+                            <span class="input-group-addon">
                                 <i class="fa fa-calendar"></i>
                             </span>
                         </div>
                     </div>
-=======
-                    <input type="number" min="100" max="10000" step="100" class="form-control mb-3" name="importe" id="importe" placeholder="Importe Financiado *" required>
-                    <label for="fechaInicio">Fecha Inicio</label>
-                    <input type="date" class="form-control mb-3" name="fechaInicio" id="fechaInicio" placeholder="Fecha de Inicio del Congreso *" required>
-                    <label for="fechaInicio">Fecha Fin</label>
-                    <input type="date" class="form-control mb-3" name="fechaFin" id="fechaFin" placeholder="Fecha de Fin del Congreso *" required>
->>>>>>> 4c57e7568349576087248ce9d4e1b7bf736cac7d
                     
                     <select name="tipoParticipacion" class="custom-select mt-3" id="tipoParticipacion">
                         <option value="Conferencia magistral">CONFERENCIA MAGISTRAL</option>
@@ -85,7 +77,7 @@
         </div>
     </div>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         $(function () {
             $('#datetimepicker').datetimepicker({
                 format: 'LT'
@@ -99,5 +91,5 @@
                 format: 'LT'
             });
         });
-    </script>
+    </script> -->
 <?php require 'footer.php'; ?>
