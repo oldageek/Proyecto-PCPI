@@ -8,19 +8,3 @@ h2 {
     size: 85px;
     font-weight: bold;
 }
-
-.input-group-addon {
-    height: 48px;
-    padding: .300rem .60rem;
-    margin-bottom: 0px;
-    font-size: 25px;
-    font-weight: 400;
-    color: #495057;
-    text-align: center;
-    border: 1px solid #ced4da;
-}
-
-svg {
-    width: 22px;
-    height: 22px;
-}

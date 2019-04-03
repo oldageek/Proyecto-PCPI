@@ -24,41 +24,23 @@
     </footer>
     
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-datepicker.min.js"></script>
-    <script>
-		$('.datepicker').datepicker({
-            format: 'mm/dd/yyyy',
-            startDate: '-3d'
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.es.js"></script>
+    <script type="text/javascript">
+        $('#fechaInicial').datetimepicker({
+          format: 'YYYY-MM-DD'       
         });
-        $('.input-daterange input').each(function() {
-            $(this).datepicker({
-                        todayBtn: "linked",
-                        keyboardNavigation: false,
-                        forceParse: false,
-                        calendarWeeks: true,
-                        autoclose: true,
-                        format: 'dd/mm/yyyy',
-                        orientation: "top auto"
-                    });
+        $('#fechaInicial').data("DateTimePicker").show();
+
+        $('#fechaFinal').datetimepicker({
+          format: 'YYYY-MM-DD'       
         });
-        $('#datepicker').datepicker();
-        $('#datepicker').on('changeDate', function() {
-            $('#my_hidden_input').val(
-                $('#datepicker').datepicker('getFormattedDate')
-            );
-        });
-        $('#data_1 .input-group.date').datepicker({
-            todayBtn: "linked",
-            keyboardNavigation: false,
-            forceParse: false,
-            calendarWeeks: true,
-            autoclose: true,
-            format: 'dd/mm/yyyy',
-            orientation: "top auto"
-        });
-	</script>
+        $('#fechaFinal').data("DateTimePicker").show();
+    </script>
 </body>
 
 </html>

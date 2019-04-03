@@ -36,20 +36,20 @@
                     
                     <input type="number" min="100" max="10000" step="100" class="form-control mt-3" name="importe" id="importe" placeholder="Importe Financiado *" required>
 
-                    <div class="form-group" id='datetimepicker'>
-                        <div class='input-group date'>
+                    <div class="form-group">
+                        <div class='input-group date' id="fechaInicial">
                             <input type="text" class="form-control mt-3" readonly name="fechaInicio" id="fechaInicio" placeholder="Fecha de Inicio del Congreso *" required>
-                            <span class="input-group-addon" >
-                                <i class="fa fa-calendar"></i>
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
                             </span>
                         </div>
                     </div>
 
-                    <div class="form-group" id='datetimepicker2'>
-                        <div class='input-group date'>
+                    <div class="form-group">
+                        <div class='input-group date' id='fechaFinal'>
                             <input type="text" class="form-control mt-3" readonly name="fechaFin" id="fechaFin" placeholder="Fecha de Fin del Congreso *" required>
                             <span class="input-group-addon">
-                                <i class="fa fa-calendar"></i>
+                                <span class="glyphicon glyphicon-calendar"></span>
                             </span>
                         </div>
                     </div>
