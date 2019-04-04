@@ -1,5 +1,4 @@
 <?php
-session_start();
 require 'admin/config.php';
 require 'functions.php';
 
@@ -27,6 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         header('Location: ../error.php');
     }
 
+    $conexion -> set_charset("utf8");
     $statement = $conexion -> prepare ("INSERT INTO investigadores(idInvestigador, curp, nombre, paterno, materno, genero, paisNacimiento, domicilio, entidad, pais, correo, pass, carAcademico, gradoAcademico, tipoPadron) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
     $statement -> bind_param('issssssssssssss', 

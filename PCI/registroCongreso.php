@@ -21,31 +21,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $palabra2 = limpiarDatos( $_POST['palabra2'] );
     $palabra3 = limpiarDatos( $_POST['palabra3'] );
     $colaboradores = limpiarDatos( $_POST['colaboradores'] );
-    
-    echo " idCongreso=[$idCongreso] ";
-    echo " idInvestigadorCongreso=[$idInvestigadorCongreso] ";
-    echo " nombreCongreso=[$nombreCongreso] ";
-    echo " trabajo=[$trabajo] ";
-    echo " nombreDocente=[$nombreDocente] ";
-    echo " pais=[$pais] ";
-    echo " fianciamiento=[$financiamiento] ";
-    echo " importe=[$importe] ";
-    echo " fechaIni=[$fechaInicio] ";
-    echo " fechaFin=[$fechaFin] ";
-    echo " participacion=[$tipoParticipacion] ";
-    echo " palabra1=[$palabra1] ";
-    echo " palabra2=[$palabra2] ";
-    echo " palabra3=[$palabra3] ";
-    echo " colaboradores=[$colaboradores] ";
-    
-    
-    
+
+    echo $fechaInicio;
+    echo $fechaFin;
     
     $conexion = conexion($bd_config);
     if (!$conexion) {
         header('Location: ../error.php');
     }
 
+    $conexion -> set_charset("utf8");
     $statement = $conexion -> prepare ("INSERT INTO congresos(idCongreso, idInvestigadorCongreso, nombreCongreso, trabajoPresentado, nombreDocente, pais, financiamiento, importeFinanciado, fechaInicio, fechaFin, tipoParticipacion, palabraClave1, palabraClave2, palabraClave3, colaboradores) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
     $statement -> bind_param('iisssssisssssss', 

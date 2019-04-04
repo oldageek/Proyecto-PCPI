@@ -15,8 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $contrasena = $_POST['contrasena'];
     }
 
-    //Correcion de insercion en la base de datos con metacaracteres
-    $conexion -> set_charset("utf8");
+    
     $statement = $conexion -> prepare(
         'SELECT correo, pass FROM investigadores WHERE correo = ? AND pass = ?'
     );
@@ -41,8 +40,8 @@ require 'views/login.view.php';
 
 <script>
     function mostrarMensaje(){
-        const div = document.createElement('div');
-        div.classList = 'alert alert-danger mt-3';
+        const div = document.querySelector('#muestraError');
+        div.classList = 'alert alert-danger mt-3 mb-2';
         div.appendChild( document.createTextNode('Correo ó contraseña incorrectas') );
         const formulario = document.querySelector('.formularioLog');
         fomulario.appendChild(div);

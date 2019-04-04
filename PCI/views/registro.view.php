@@ -22,7 +22,6 @@
                     <select name="genero" class="custom-select mb-3" id="genero">
                         <option value="Masculino">Masculino</option>
                         <option value="Femenino">Femenino</option>
-                        <option value="Otro">Otro</option>
                         <option disabled selected>- Seleccionar - *</option>
                     </select>
                     
@@ -80,10 +79,10 @@
 
                     <label for="grado">Grado Academico:</label>
                     <select name="grado" class="custom-select mb-4" id="grado">
+                        <option value="Doctorado">Doctorado</option>
+                        <option value="Maestria">Maestria</option>
                         <option value="Licenciatura">Licenciatura</option>
                         <option value="Especialidad">Especialidad</option>
-                        <option value="Maestria">Maestria</option>
-                        <option value="Doctorado">Doctorado</option>
                         <option value="Otro">Otro</option>
                         <option disabled selected>- Seleccionar - *</option>
                     </select>

@@ -23,6 +23,7 @@
                         <form method="post" class="formularioLog" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                             <input type="mail" class="form-control form-contro-lg  mt-3 mb-2" name="correo" id="correo" placeholder="Correo electronico">
                             <input type="password" class="form-control form-contro-lg  mt-3 mb-2" name="contrasena" id="contrasena" placeholder="Contraseña">
+                            <div id="muestraError"></div>
                             <button type="submit" class="btn btn-success mt-4">Iniciar Sesion</button>
                         </form>
                     </div>

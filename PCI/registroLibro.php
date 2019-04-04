@@ -32,6 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         header('Location: ../error.php');
     }
 
+    $conexion -> set_charset("utf8");
     $statement = $conexion -> prepare ("INSERT INTO libros(idLibro, idInvestigadorLibro, isbn, titulo, anioCreacion, volumen, tomo, edicion, editorial, numPaginas, financiamiento, importeFinanciado, estatus, idioma, palabraClave1, palabraClave2, palabraClave3, area, subArea, apoyoConacyt, autores) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
     $statement -> bind_param('iissiiiisisisssssssss', 

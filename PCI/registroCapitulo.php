@@ -33,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         header('Location: ../error.php');
     }
 
+    $conexion -> set_charset("utf8");
     $statement = $conexion -> prepare ("INSERT INTO capitulos(idCapitulo, idLibrosCapitulo, tituloCapitulo, numCapitulo, paginaInicio, paginaFin, descripcion, autores) VALUES( ?, ?, ?, ?, ?, ?, ?, ?)");
 
     $statement -> bind_param('iisiiiss', 

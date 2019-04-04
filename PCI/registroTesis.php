@@ -32,6 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         header('Location: ../error.php');
     }
 
+    $conexion -> set_charset("utf8");
     $statement = $conexion -> prepare ("INSERT INTO tesis(idTesis, idInvestigadorTesis, nombreAutor, paterno, materno, gradoAcademico, area, subArea, apoyoConacyt) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
     $statement -> bind_param('iisssssss', 
