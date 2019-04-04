@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $tituloLibro = limpiarDatos( $_POST['tituloLibro'] );
     $idCapitulo = null;
-    $idCapituloInvestigador = null;
+    $idCapituloInvestigador = $_SESSION['id'];
     $tituloCap = limpiarDatos( $_POST['tituloCap'] );
     $numeroCap = limpiarDatos( $_POST['numeroCap'] );
     $paginaInicio = limpiarDatos( $_POST['paginaInicio'] );

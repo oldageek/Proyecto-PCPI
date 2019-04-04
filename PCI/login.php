@@ -15,16 +15,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $contrasena = $_POST['contrasena'];
     }
 
-    
+    $conexion -> set_charset("utf8");
     $statement = $conexion -> prepare(
         'SELECT idInvestigador, correo, pass FROM investigadores WHERE correo = ? AND pass = ?'
     );
     $statement -> bind_param("ss", $correo, $contrasena);
 
     $statement -> execute();
+    
+    $statement -> bind_result($_SESSION['id'],$correo, $pass);
+    
     $resultado = $statement -> fetch();
-
-    print_r($resultado);
     
     if (empty($resultado)) {
         echo "<script type='text/javascript'>";

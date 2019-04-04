@@ -7,7 +7,7 @@ require 'functions.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $idTesis = null;
-    $idInvetigadorTesis = null;
+    $idInvetigadorTesis = $_SESSION['id'];
     $nombreAutor = limpiarDatos( $_POST['nombreAutor'] );
     $paterno = limpiarDatos( $_POST['paterno'] );
     $materno = limpiarDatos( $_POST['materno'] );
@@ -15,7 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $area = $_POST['area'];
     $subArea = $_POST['subArea'];
     $apoyoCona = $_POST['apoyoCona'];
-    
     
     $conexion = conexion($bd_config);
     if (!$conexion) {
@@ -38,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $statement -> execute();
 
-    //header('Location: ' . RUTA . '/usuario.php');
+    header('Location: ' . RUTA . '/usuario.php');
 
 }
 
