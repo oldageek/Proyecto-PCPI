@@ -17,12 +17,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     
     $statement = $conexion -> prepare(
-        'SELECT correo, pass FROM investigadores WHERE correo = ? AND pass = ?'
+        'SELECT idInvestigador, correo, pass FROM investigadores WHERE correo = ? AND pass = ?'
     );
     $statement -> bind_param("ss", $correo, $contrasena);
 
     $statement -> execute();
     $resultado = $statement -> fetch();
+
+    print_r($resultado);
+    
     if (empty($resultado)) {
         echo "<script type='text/javascript'>";
             mostrarMensaje();

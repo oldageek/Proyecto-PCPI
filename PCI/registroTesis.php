@@ -16,16 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $subArea = $_POST['subArea'];
     $apoyoCona = $_POST['apoyoCona'];
     
-    echo " ID TESIS[$idTesis] ";
-    echo " ID IVESTIGADORTESIS[$idInvetigadorTesis] ";
-    echo " NOMBREAUTOR[$nombreAutor] ";
-    echo " PATERNO[$paterno] ";
-    echo " MATERNO[$materno] ";
-    echo " GRADO[$gradoAcademico] ";
-    echo " AREA[$area] ";
-    echo " SUBAREA[$subArea] ";
-    echo " APOYO[$apoyoCona] ";
-    
     
     $conexion = conexion($bd_config);
     if (!$conexion) {
