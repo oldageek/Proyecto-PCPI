@@ -5,7 +5,7 @@ require 'functions.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $idProyecto = null;
-    $idInvestigadorProyecto = null;
+    $idInvestigadorProyecto = $_SESSION['id'];
     $nombreProyecto = limpiarDatos( $_POST['nombreProyecto'] );
     $lineaInvestigacion = limpiarDatos( $_POST['lineaInvestigacion'] );
     $instanciaRegistro = limpiarDatos( $_POST['instanciaRegistro'] );

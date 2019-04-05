@@ -7,7 +7,7 @@ require 'functions.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $idCongreso = null;
-    $idInvestigadorCongreso = null;
+    $idInvestigadorCongreso = $_SESSION['id'];
     $nombreCongreso = limpiarDatos( $_POST['nombreCongreso'] );
     $trabajo = limpiarDatos( $_POST['trabajo'] );
     $nombreDocente = limpiarDatos( $_POST['nombreDocente'] );
@@ -22,8 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $palabra3 = limpiarDatos( $_POST['palabra3'] );
     $colaboradores = limpiarDatos( $_POST['colaboradores'] );
 
-    echo $fechaInicio;
-    echo $fechaFin;
+    //echo $fechaInicio;
+    //echo $fechaFin;
     
     $conexion = conexion($bd_config);
     if (!$conexion) {

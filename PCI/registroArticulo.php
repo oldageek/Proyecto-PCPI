@@ -7,7 +7,7 @@ require 'functions.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $idArticulo = null;
-    $idInvetigadorArticulo = null;
+    $idInvetigadorArticulo = $_SESSION['id'];
     $issn = limpiarDatos( $_POST['issn'] );
     $tituloRevista = limpiarDatos( $_POST['tituloRevista'] );
     $nombreRevista = limpiarDatos( $_POST['nombreRevista'] );
@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $apoyoCona = $_POST['apoyoCona'];
     $autores = $_POST['autores'];
     
-    echo " id articulo=[$idArticulo] ";
+    /*echo " id articulo=[$idArticulo] ";
     echo " id investigador tesis=[$idInvetigadorArticulo] ";
     echo " issn=[$issn] ";
     echo " titulorevista=[$tituloRevista] ";
@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo " subArea=[$subArea] ";
     echo " apoyo=[$apoyoCona] ";
     echo " autores=[$autores] ";
-    
+    */
     
     
     $conexion = conexion($bd_config);
@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $statement -> execute();
 
-    //header('Location: ' . RUTA . '/usuario.php');
+    header('Location: ' . RUTA . '/usuario.php');
 
 }
 

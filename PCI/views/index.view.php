@@ -77,7 +77,7 @@
                         <img class="card-img-top" src="img/conacyt.png" alt="Imagen de card">
                         <div class="card-body">
                             <h5 class="card-title">Consejo Nacional de Ciencia y Tecnologia</h5>
-                            <p class="card-text">Esta plataforma promueve la inovación en el gobierno, impulsa la eficiencia y transforma los procesos para proveer una plataforma de participacion a la poblacion.</p>
+                            <p class="card-text">Esta plataforma promueve la inovación en el gobierno, impulsa la eficiencia y transforma los procesos...</p>
                             <a href=" https://miic.conacyt.mx/generador-view-angular/index.html?application=CVU#/login " target="_blank" class="btn btn-info">Leer mas...</a>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                         <img class="card-img-top" src="img/autoservenlace.png" alt="Imagen de card">
                         <div class="card-body">
                             <h5 class="card-title">Autoservicios</h5>
-                            <p class="card-text">Pagina Oficial de la Benemerita Universidad Autonoma de Puebla, creada para los alumnos y docentes.</p>
+                            <p class="card-text">Pagina Oficial de la Benemerita Universidad Autonoma de Puebla...</p>
                             <a href=" http://webserver1.siiaa.siu.buap.mx:81/autoservicios/twbkwbis.P_GenMenu?name=homepage" target="_blank"  class="btn btn-info">Leer mas...</a>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                         <img class="card-img-top" src="img/contaEnlace5.jpg" alt="Imagen de card">
                         <div class="card-body">
                             <h5 class="card-title">Mapa Curricular</h5>
-                            <p class="card-text">Mapa curricular del programa educativo MINERVA de la Facultad de Contaduria Pública</p>
+                            <p class="card-text">Mapa curricular del programa educativo MINERVA para apoyo de los investigadores de la Facultad de Contaduria Pública</p>
                             <a href=" https://www.google.com/url?sa=t&source=web&rct=j&url=http://cmas.siu.buap.mx/portal_pprd/work/sites/contaduria/resources/LocalContent/233/2/MAPA%2520CURRICULAR%2520LCP-SEMESTRAL.pdf&ved=2ahUKEwjFlfnh74_hAhVDSq0KHXBRAAoQFjAAegQIBRAB&usg=AOvVaw1grM1rsugK8S6Zu2ahSdmd " target="_blank" class="btn btn-info">Leer mas...</a>
                         </div>
                     </div>

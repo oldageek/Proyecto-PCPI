@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $tituloLibro = limpiarDatos( $_POST['tituloLibro'] );
     $idCapitulo = null;
-    $idCapituloInvestigador = null;
+    $idCapituloInvestigador = $_SESSION['id'];
     $tituloCap = limpiarDatos( $_POST['tituloCap'] );
     $numeroCap = limpiarDatos( $_POST['numeroCap'] );
     $paginaInicio = limpiarDatos( $_POST['paginaInicio'] );
@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $descripcion = limpiarDatos( $_POST['descripcion'] );
     $autores = limpiarDatos( $_POST['autores'] );
     
-    echo " tituloLibro=[$tituloLibro] ";
+    /*echo " tituloLibro=[$tituloLibro] ";
     echo " idCapitulo=[$idCapitulo] ";
     echo " idCapituloInvestigador=[$idCapituloInvestigador] ";
     echo " tituloCapitulo=[$tituloCap] ";
@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo " paginaFin=[$paginaFin] ";
     echo " descripcion=[$descripcion] ";
     echo " autores=[$autores] ";
-    
+    */
     
     
     $conexion = conexion($bd_config);
@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $statement -> execute();
 
-    //header('Location: ' . RUTA . '/usuario.php');
+    header('Location: ' . RUTA . '/usuario.php');
 
 }
 
