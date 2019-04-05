@@ -39,7 +39,7 @@
         </div>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-2">
             <div class="container">
-                <a href="#" class="navbar-brand">Mi Perfil</a>
+                <a href="usuario.php" class="navbar-brand">Mi Perfil</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de navegacion">
                     <span class="navbar-toggler-icon"></span>
@@ -48,25 +48,25 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a href="" class="nav-link">Libros</a>
+                            <a href="libros.php" class="nav-link">Libros</a> <!-- ya -->
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Capitulos</a>
+                            <a href="capitulos.php" class="nav-link">Capitulos</a> <!-- ya -->
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Publicaciones</a>
+                            <a href="publicaciones.php" class="nav-link">Publicaciones</a> <!-- ya -->
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Revistas</a>
+                            <a href="articulos.php" class="nav-link">Articulos</a> <!-- ya -->
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Congresos</a>
+                            <a href="congresos.php" class="nav-link">Congresos</a> <!-- ya -->
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Proyectos</a>
+                            <a href="proyectos.php" class="nav-link">Proyectos</a> <!-- ya -->
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Tesis</a>
+                            <a href="tesis.php" class="nav-link">Tesis</a> 
                         </li>
                     </ul>
                 </div>

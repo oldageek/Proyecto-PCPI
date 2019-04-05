@@ -7,7 +7,7 @@ require 'functions.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $idArticulo = null;
-    $idInvetigadorArticulo = null;
+    $idInvetigadorArticulo = $_SESSION['id'];
     $issn = limpiarDatos( $_POST['issn'] );
     $tituloRevista = limpiarDatos( $_POST['tituloRevista'] );
     $nombreRevista = limpiarDatos( $_POST['nombreRevista'] );

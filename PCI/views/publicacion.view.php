@@ -6,7 +6,7 @@
         </div-->
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
-                <h3>Registro de Publicaciones <!--<i class="fas fa-search"></i>--></h3>
+                <h3>Registro de Publicacion <!--<i class="fas fa-search"></i>--></h3>
             </div>
         </div>
         <div class="row mt-4">
