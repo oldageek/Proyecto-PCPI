@@ -28,27 +28,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         header('Location: ../error.php');
     }
 
-    // $conexion -> set_charset("utf8");
-    // $statement = $conexion -> prepare ("INSERT INTO congresos(idCongreso, idInvestigadorCongreso, nombreCongreso, trabajoPresentado, nombreDocente, pais, financiamiento, importeFinanciado, fechaInicio, fechaFin, tipoParticipacion, palabraClave1, palabraClave2, palabraClave3, colaboradores) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $conexion -> set_charset("utf8");
+    $statement = $conexion -> prepare ("INSERT INTO congresos(idCongreso, idInvestigadorCongreso, nombreCongreso, trabajoPresentado, nombreDocente, pais, financiamiento, importeFinanciado, fechaInicio, fechaFin, tipoParticipacion, palabraClave1, palabraClave2, palabraClave3, colaboradores) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
-    // $statement -> bind_param('iisssssisssssss', 
-    // $idCongreso,
-    // $idInvestigadorCongreso,
-    // $nombreCongreso,
-    // $trabajo,
-    // $nombreDocente,
-    // $pais,
-    // $financiamiento,
-    // $importe,
-    // $fechaInicio,
-    // $fechaFin,
-    // $tipoParticipacion,
-    // $palabra1,
-    // $palabra2,
-    // $palabra3,
-    // $colaboradores);
+    $statement -> bind_param('iisssssisssssss', 
+    $idCongreso,
+    $idInvestigadorCongreso,
+    $nombreCongreso,
+    $trabajo,
+    $nombreDocente,
+    $pais,
+    $financiamiento,
+    $importe,
+    $fechaInicio,
+    $fechaFin,
+    $tipoParticipacion,
+    $palabra1,
+    $palabra2,
+    $palabra3,
+    $colaboradores);
 
-    // $statement -> execute();
+    $statement -> execute();
 
     //header('Location: ' . RUTA . '/usuario.php');
 

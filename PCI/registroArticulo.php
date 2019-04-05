@@ -24,25 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $apoyoCona = $_POST['apoyoCona'];
     $autores = $_POST['autores'];
     
-    echo " id articulo=[$idArticulo] ";
-    echo " id investigador tesis=[$idInvetigadorArticulo] ";
-    echo " issn=[$issn] ";
-    echo " titulorevista=[$tituloRevista] ";
-    echo " nombreRevista=[$nombreRevista] ";
-    echo " numeroRevista=[$numeroRevista] ";
-    echo " volumen=[$volumen] ";
-    echo " anioPublicacion=[$anioPublicacion] ";
-    echo " paginaIni=[$paginaInicio] ";
-    echo " paginaFin=[$paginaFin] ";
-    echo " palabra1=[$palabra1] ";
-    echo " palabra2=[$palabra2] ";
-    echo " palabra3=[$palabra3] ";
-    echo " area=[$area] ";
-    echo " subArea=[$subArea] ";
-    echo " apoyo=[$apoyoCona] ";
-    echo " autores=[$autores] ";
-    
-    
     
     $conexion = conexion($bd_config);
     if (!$conexion) {

@@ -16,17 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $descripcion = limpiarDatos( $_POST['descripcion'] );
     $autores = limpiarDatos( $_POST['autores'] );
     
-    echo " tituloLibro=[$tituloLibro] ";
-    echo " idCapitulo=[$idCapitulo] ";
-    echo " idCapituloInvestigador=[$idCapituloInvestigador] ";
-    echo " tituloCapitulo=[$tituloCap] ";
-    echo " numeroCap=[$numeroCap] ";
-    echo " paginaIni=[$paginaInicio] ";
-    echo " paginaFin=[$paginaFin] ";
-    echo " descripcion=[$descripcion] ";
-    echo " autores=[$autores] ";
-    
-    
     
     $conexion = conexion($bd_config);
     if (!$conexion) {
