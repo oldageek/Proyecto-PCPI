@@ -6,3 +6,5 @@ $_SESSION = array();
 
 header('Location: ../');
 die();
+
+?>

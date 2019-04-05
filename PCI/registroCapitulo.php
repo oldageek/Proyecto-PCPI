@@ -16,8 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $descripcion = limpiarDatos( $_POST['descripcion'] );
     $autores = limpiarDatos( $_POST['autores'] );
     
-<<<<<<< HEAD
-=======
     /*echo " tituloLibro=[$tituloLibro] ";
     echo " idCapitulo=[$idCapitulo] ";
     echo " idCapituloInvestigador=[$idCapituloInvestigador] ";
@@ -29,7 +27,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo " autores=[$autores] ";
     */
     
->>>>>>> b1e19bc5c365a175b34020be2ae30dd61a67da7b
     
     $conexion = conexion($bd_config);
     if (!$conexion) {
