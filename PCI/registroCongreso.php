@@ -14,15 +14,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $pais = limpiarDatos( $_POST['pais'] );
     $financiamiento = limpiarDatos( $_POST['financiamiento'] );
     $importe = limpiarDatos( $_POST['importe'] );
-    $fechaInicio = ( $_POST['fechaInicio'] );
-    $fechaFin = ( $_POST['fechaFin'] );
+    $fechaInicio = limpiarDatos( $_POST['fechaInicio'] );
+    $fechaFin = limpiarDatos( $_POST['fechaFin'] );
     $tipoParticipacion = limpiarDatos( $_POST['tipoParticipacion'] );
     $palabra1 = limpiarDatos( $_POST['palabra1'] );
     $palabra2 = limpiarDatos( $_POST['palabra2'] );
     $palabra3 = limpiarDatos( $_POST['palabra3'] );
     $colaboradores = limpiarDatos( $_POST['colaboradores'] );
-    
 
+    //echo $fechaInicio;
+    //echo $fechaFin;
+    
     $conexion = conexion($bd_config);
     if (!$conexion) {
         header('Location: ../error.php');

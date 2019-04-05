@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $contrasena = $_POST['contrasena'];
     }
 
-    $conexion -> set_charset("utf8");
+    
     $statement = $conexion -> prepare(
         'SELECT idInvestigador, correo, pass FROM investigadores WHERE correo = ? AND pass = ?'
     );
@@ -26,6 +26,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $statement -> bind_result($_SESSION['id'],$correo, $pass);
     
     $resultado = $statement -> fetch();
+    
+    printf("%s",$_SESSION['id']);
     
     if (empty($resultado)) {
         echo "<script type='text/javascript'>";

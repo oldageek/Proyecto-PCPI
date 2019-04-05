@@ -11,7 +11,7 @@
         </div>
         <div class="row mt-4">
             <div class="col-6">
-                <h5>Informacion de Tesis</h5>
+                <!--h5>Informacion de Tesis</h5-->
                 <form action="" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                     <br>
                     <h5>Autor</h5>
