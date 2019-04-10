@@ -61,7 +61,6 @@
                         <td><?php echo utf8_encode($mostrar['subArea']) ?></td>
                         <td><?php echo utf8_encode($mostrar['apoyoConacyt']) ?></td>
                         <td><?php echo utf8_encode($mostrar['Autores']) ?></td>
-                        
                     </tr>
                 <?php
                 }
@@ -70,11 +69,6 @@
             </tbody>
         </table>
     </div>
-    
-    
-    
-    
-    
     
     
     <div class="col d-flex justify-content-end">        

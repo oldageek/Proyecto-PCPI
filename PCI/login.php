@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     $resultado = $statement -> fetch();
     
-    printf("%s",$_SESSION['id']);
+    //printf("%s",$_SESSION['id']);
     
     if (empty($resultado)) {
         echo "<script type='text/javascript'>";
