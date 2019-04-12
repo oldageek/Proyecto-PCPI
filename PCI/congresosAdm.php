@@ -11,7 +11,6 @@ if (!$conexion) {
 }
 
 
-$resultado = $conexion->query('SELECT * FROM proyectos WHERE idInvestigadorProyecto = '.$_SESSION['id']);
+$resultado = $conexion->query('SELECT * FROM congresos');
 
-
-require 'views/misProyectos.view.php';
+require 'views/admCongresos.view.php';

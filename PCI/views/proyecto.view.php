@@ -54,7 +54,7 @@
                     <input type="text" class="form-control mt-3" name="nomReconocimiento" id="nomReconocimiento" placeholder="Nombre del Reconocimiento ">
                     <br>
                     <h5>Descripción del Proyecto</h5>
-                    <textarea class="form-control mt-3 mb-5" rows="5" id="descripcion" placeholder="Descripción *" required></textarea>
+                    <textarea class="form-control mt-3 mb-5" rows="5" name="descripcion" id="descripcion" placeholder="Descripción *" required></textarea>
                     <h5>Area de Conocimiento</h5>
                     
                     <select name="area" class="custom-select mt-3" id="area">

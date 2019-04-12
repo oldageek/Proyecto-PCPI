@@ -16,8 +16,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     
+    //Consulta Administrador
     $statement = $conexion -> prepare(
-        'SELECT idInvestigador, correo, pass FROM investigadores WHERE correo = ? AND pass = ?'
+        'SELECT idAdministrador, correo, pass FROM administradores WHERE correo = ? AND pass = ?'
     );
     $statement -> bind_param("ss", $correo, $contrasena);
 
@@ -26,16 +27,31 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $statement -> bind_result($_SESSION['id'],$correo, $pass);
     
     $resultado = $statement -> fetch();
+
+    /*/Consulta Investigador
+    $statement2 = $conexion -> prepare(
+        'SELECT idInvestigador, correo, pass FROM investigadores WHERE correo = ? AND pass = ?'
+    );
+    $statement2 -> bind_param("ss", $correo, $contrasena);
+
+    $statement2 -> execute();
     
-    //printf("%s",$_SESSION['id']);
+    $statement2 -> bind_result($_SESSION['id'],$correo, $pass);
     
+    $resultado2 = $statement2 -> fetch();
+    */
     if (empty($resultado)) {
-        echo "<script type='text/javascript'>";
+        if(empty($resultado2)){
+            echo "<script type='text/javascript'>";
             mostrarMensaje();
-        echo "</script>";
+            echo "</script>";
+        }else{
+            header('Location: ' . RUTA . '/investigador.php');
+        }
+        
     }else {
         
-        header('Location: ' . RUTA . '/usuario.php');
+        header('Location: ' . RUTA . '/administrador.php');
     }
 
 }

@@ -1,4 +1,4 @@
-<?php require 'header.php'; ?>
+<?php require 'headerAdm.php'; ?>
 
 <div class="container">
     <div class="row mt-4 mb-4">
@@ -8,7 +8,7 @@
     </div>
     <div class="row mb-4 d-flex justify-content-center">
         <div class="col-auto align-self-center">
-            <h2>Guia de Navegación</h2>
+            <h2>Administrador</h2>
         </div>
     </div>
     <div class="row">

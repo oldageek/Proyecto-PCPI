@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $fechaFin = $_POST['fechaFin'];
     $estatus = $_POST['estatus'];
     $porcentajeAvance = $_POST['porcentajeAvance'];
-    $reconocimineto = $_POST['reconocimineto'];
+    $reconocimineto = $_POST['reconocimiento'];
     $nomReconocimiento = limpiarDatos( $_POST['nomReconocimiento'] );
     $descripcion = $_POST['descripcion'];
     $area = $_POST['area'];
