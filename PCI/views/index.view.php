@@ -9,7 +9,7 @@
                     </pre>
                 </div>
                 <div class="col-12 mb-5">
-                    <div class="carousel slide" id="principal-carousel" data-ride="carousel">
+                    <div class="carousel slide carousel-fade" id="principal-carousel" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#principal-carousel" data-slide-to="0" class="active"></li>
                             <li data-target="#principal-carousel" data-slide-to="1"></li>
