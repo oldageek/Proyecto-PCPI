@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     //Consulta Administrador
     $statement = $conexion -> prepare(
-        'SELECT idAdministrador, correo, pass FROM administradores WHERE correo = ? AND pass = ?'
+        'SELECT idInvestigador, correo, pass FROM investigadores WHERE correo = ? AND pass = ?'
     );
     $statement -> bind_param("ss", $correo, $contrasena);
 

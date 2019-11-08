@@ -30,7 +30,7 @@
     <script src="js/moment.min.js"></script>
     <script src="js/bootstrap-datetimepicker.min.js"></script>
     <script src="js/bootstrap-datetimepicker.es.js"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         $('#fechaInicial').datetimepicker({
           format: 'YYYY-MM-DD'       
         });
@@ -40,7 +40,7 @@
           format: 'YYYY-MM-DD'       
         });
         $('#fechaFinal').data("DateTimePicker").show();
-    </script>
+    </script> -->
 </body>
 
 </html>
