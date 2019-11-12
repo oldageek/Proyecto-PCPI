@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-03-2019 a las 23:46:59
--- Versión del servidor: 10.1.38-MariaDB
--- Versión de PHP: 7.3.2
+-- Tiempo de generación: 08-11-2019 a las 16:30:05
+-- Versión del servidor: 10.4.6-MariaDB
+-- Versión de PHP: 7.1.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -34,8 +34,15 @@ CREATE TABLE `administradores` (
   `paterno` varchar(50) DEFAULT NULL,
   `materno` varchar(50) DEFAULT NULL,
   `correo` varchar(50) DEFAULT NULL,
-  `password` varchar(50) DEFAULT NULL
+  `passw` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `administradores`
+--
+
+INSERT INTO `administradores` (`idAdministrador`, `nombre`, `paterno`, `materno`, `correo`, `passw`) VALUES
+(1, 'Oscar', 'Tapia', 'Carbajal', 'admin@gmail.com', '123456');
 
 -- --------------------------------------------------------
 
@@ -133,7 +140,11 @@ CREATE TABLE `investigadores` (
 --
 
 INSERT INTO `investigadores` (`idInvestigador`, `curp`, `nombre`, `paterno`, `materno`, `genero`, `paisNacimiento`, `domicilio`, `entidad`, `pais`, `correo`, `pass`, `carAcademico`, `gradoAcademico`, `tipoPadron`) VALUES
-(4, '12345', 'Oscar', 'Tapia', 'Carbajal', 'Masculino', 'MÃ©xico', '143 F poniente', 'Puebla', 'MÃ©xico', 'oscarsk69@gmail.com', '1234', 'Secretario', 'Especialidad', 'Tipo 1');
+(4, '12345', 'Oscar', 'Tapia', 'Carbajal', 'Masculino', 'México', '143 F poniente', 'Puebla', 'México', 'oscarsk69@gmail.com', '1234', 'Secretario', 'Especialidad', 'Tipo 1'),
+(5, '1234', 'Oscar', 'Tapia', 'Carbajal', 'Masculino', 'Argentina', 'calle 2', 'Puebla', 'Mexico', 'oscar@hotmail.com', '1234', 'Profesor', 'Doctorado', 'BIEP'),
+(6, '123123123123', 'jaja', 'jaja', 'jaja', 'Masculino', 'Mexico', 'qweqwe', 'Tlaxcala', 'Mexico', 'a@h.com', '1234', 'Profesor', 'Doctorado', 'BIEP'),
+(7, '123123123123', 'jaja', 'jaja', 'jaja', 'Masculino', 'Mexico', 'qweqwe', 'Tlaxcala', 'Mexico', 'a@h.com', '', 'Profesor', 'Doctorado', 'BIEP'),
+(8, '2323', 'Javier', 'Falcon', 'Lozada', 'Masculino', 'Colombia', 'Av San Claudio', 'Puebla', 'Mexico', 'javier@gmail.com', '1234', 'Profesor', 'Maestria', 'BIEP');
 
 -- --------------------------------------------------------
 
@@ -141,7 +152,7 @@ INSERT INTO `investigadores` (`idInvestigador`, `curp`, `nombre`, `paterno`, `ma
 -- Estructura de tabla para la tabla `libros`
 --
 
-CREATE TABLE `libros` ( 
+CREATE TABLE `libros` (
   `idLibro` int(11) NOT NULL,
   `idInvestigadorLibro` int(11) NOT NULL,
   `isbn` varchar(30) NOT NULL,
@@ -164,6 +175,15 @@ CREATE TABLE `libros` (
   `apoyoConacyt` varchar(2) DEFAULT NULL,
   `Autores` varchar(400) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `libros`
+--
+
+INSERT INTO `libros` (`idLibro`, `idInvestigadorLibro`, `isbn`, `titulo`, `anioCreacion`, `volumen`, `tomo`, `edicion`, `editorial`, `numPaginas`, `financiamiento`, `importeFinanciado`, `estatus`, `idioma`, `palabraClave1`, `palabraClave2`, `palabraClave3`, `area`, `subArea`, `apoyoConacyt`, `Autores`) VALUES
+(1, 8, '42345', 'Luna de Plutón', 2014, 1, 1, 2011, 'Trillas', 356, 'Si', 400, 'Publicado', 'Español', 'Luna', 'De', 'Pluton', 'Informacion Financiera', 'Contabilidad Gerencial', 'NO', 'Dross'),
+(2, 8, '3456456', 'El Código da Vinci', 2009, 4, 4, 2012, 'editorial', 567, 'Si', 1600, 'Publicado', 'Español', 'hola', 'como', 'estas', 'Juridico Fiscal', 'Contabilidad Gerencial', 'Si', 'Dan Brown'),
+(3, 8, '34634545', 'Lo que el viento se llevó', 2002, 1, 1, 2010, 'Trillas', 345, 'Si', 8500, 'Terminado', 'Español', 'lo', 'que', 'viento', 'Juridico Fiscal', 'Contabilidad', 'NO', 'Margaret Mitchell');
 
 -- --------------------------------------------------------
 
@@ -197,7 +217,7 @@ CREATE TABLE `proyectos` (
 -- Estructura de tabla para la tabla `publicaciones`
 --
 
-CREATE TABLE `publicaciones` ( 
+CREATE TABLE `publicaciones` (
   `idPublicacion` int(11) NOT NULL,
   `idInvestigadorPublicacion` int(11) NOT NULL,
   `isnn` varchar(45) DEFAULT NULL,
@@ -233,6 +253,17 @@ CREATE TABLE `tesis` (
   `subArea` varchar(45) DEFAULT NULL,
   `apoyoConacyt` varchar(10) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `tesis`
+--
+
+INSERT INTO `tesis` (`idTesis`, `idInvestigadorTesis`, `nombreAutor`, `paterno`, `materno`, `gradoAcademico`, `area`, `subArea`, `apoyoConacyt`) VALUES
+(1, 8, 'Javier', 'Falcon', 'Lozada', 'Maestria', 'Informacion Financiera', 'Fiscal', 'NO'),
+(2, 5, 'Oscar', 'Tapia', 'Carbajal', 'Maestria', 'Informacion Financiera', 'Fiscal', 'SI'),
+(3, 8, 'Javier', 'Falcon', 'Lozada', 'Maestria', 'Informacion Financiera', 'Fiscal', 'SI'),
+(4, 5, 'Oscar', 'Tapia', 'Carbajal', 'Maestria', 'Informacion Financiera', 'Fiscal', 'SI'),
+(5, 5, 'Oscar', 'Tapia', 'Carbajal', 'Doctorado', 'Informacion Financiera', 'Fiscal', 'SI');
 
 --
 -- Índices para tablas volcadas
@@ -307,7 +338,7 @@ ALTER TABLE `tesis`
 -- AUTO_INCREMENT de la tabla `administradores`
 --
 ALTER TABLE `administradores`
-  MODIFY `idAdministrador` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idAdministrador` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `articulos`
@@ -331,13 +362,13 @@ ALTER TABLE `congresos`
 -- AUTO_INCREMENT de la tabla `investigadores`
 --
 ALTER TABLE `investigadores`
-  MODIFY `idInvestigador` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `idInvestigador` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `libros`
 --
 ALTER TABLE `libros`
-  MODIFY `idLibro` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idLibro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `proyectos`
@@ -355,7 +386,7 @@ ALTER TABLE `publicaciones`
 -- AUTO_INCREMENT de la tabla `tesis`
 --
 ALTER TABLE `tesis`
-  MODIFY `idTesis` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idTesis` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Restricciones para tablas volcadas
@@ -407,4 +438,3 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-mexilabc_fisicasysteminvestigadores

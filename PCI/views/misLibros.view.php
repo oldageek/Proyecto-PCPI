@@ -75,6 +75,14 @@
             </table>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col">
+            <form action="pdf_creator/pdf_libros.php">
+                <button type="submit" class="btn btn-danger mx-5 my-3">Descargar PDF</button>
+            </form>
+        </div>
+    </div>
 </div>
 
 <?php require 'footer.php'; ?>

@@ -40,14 +40,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     $resultado2 = $statement2 -> fetch();
     */
-    if (empty($resultado)) {
-        if(empty($resultado2)){
-            echo "<script type='text/javascript'>";
-            mostrarMensaje();
-            echo "</script>";
-        }else{
-            header('Location: ' . RUTA . '/investigador.php');
-        }
+    if (!empty($resultado)) {
+        header('Location: ' . RUTA . '/usuario.php');
+        // if(empty($resultado2)){
+        //     echo "<script type='text/javascript'>";
+        //     mostrarMensaje();
+        //     echo "</script>";
+        // }else{
+        // }
         
     }else {
         
